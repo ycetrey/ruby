@@ -1,0 +1,11 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  title: MyString
+  discografia: one
+  file: MyString
+
+two:
+  title: MyString
+  discografia: two
+  file: MyString

@@ -1,5 +1,6 @@
 Rails.application.routes.draw do
 
+  devise_for :users
   mount RailsAdmin::Engine => '/backend', as: 'rails_admin'
   root 'pages#home'
 

@@ -55,3 +55,7 @@ gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
 
 gem 'rails_admin'
 gem 'erubis'
+gem 'devise'
+gem 'cancancan'
+gem 'carrierwave'
+gem 'rails_admin_rollincode', :git => 'git@github.com:ycetrey/rails_admin_theme.git'

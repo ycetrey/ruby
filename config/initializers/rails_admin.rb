@@ -1,15 +1,23 @@
 RailsAdmin.config do |config|
 
+  config.main_app_name = ["Gerenciador de conteudo", ""]
+
+  config.navigation_static_links = {
+    'Site' => 'http://www.canoserrado.com.br'
+  }
+
+  config.navigation_static_label = "Links uteis"
+
   ### Popular gems integration
 
   ## == Devise ==
-  # config.authenticate_with do
-  #   warden.authenticate! scope: :user
-  # end
-  # config.current_user_method(&:current_user)
+  config.authenticate_with do
+    warden.authenticate! scope: :user
+  end
+  config.current_user_method(&:current_user)
 
   ## == Cancan ==
-  # config.authorize_with :cancan
+  config.authorize_with :cancan
 
   ## == Pundit ==
   # config.authorize_with :pundit

@@ -10,7 +10,16 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20170516195224) do
+ActiveRecord::Schema.define(version: 20170517180111) do
+
+  create_table "agendas", force: :cascade do |t|
+    t.string "title"
+    t.string "address"
+    t.string "city"
+    t.datetime "event_date"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
 
   create_table "banners", force: :cascade do |t|
     t.string "name"
@@ -19,9 +28,54 @@ ActiveRecord::Schema.define(version: 20170516195224) do
     t.datetime "updated_at", null: false
   end
 
+  create_table "discografias", force: :cascade do |t|
+    t.string "title"
+    t.string "folder"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
+
+  create_table "mp3s", force: :cascade do |t|
+    t.string "title"
+    t.integer "discografia_id"
+    t.string "file"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+    t.index ["discografia_id"], name: "index_mp3s_on_discografia_id"
+  end
+
+  create_table "photos", force: :cascade do |t|
+    t.string "legend"
+    t.string "address"
+    t.datetime "date"
+    t.string "event_name"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
+
   create_table "users", force: :cascade do |t|
     t.string "name"
     t.string "password"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+    t.string "email", default: "", null: false
+    t.string "encrypted_password", default: "", null: false
+    t.string "reset_password_token"
+    t.datetime "reset_password_sent_at"
+    t.datetime "remember_created_at"
+    t.integer "sign_in_count", default: 0, null: false
+    t.datetime "current_sign_in_at"
+    t.datetime "last_sign_in_at"
+    t.string "current_sign_in_ip"
+    t.string "last_sign_in_ip"
+    t.index ["email"], name: "index_users_on_email", unique: true
+    t.index ["reset_password_token"], name: "index_users_on_reset_password_token", unique: true
+  end
+
+  create_table "videos", force: :cascade do |t|
+    t.string "title"
+    t.string "address"
+    t.string "url"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end

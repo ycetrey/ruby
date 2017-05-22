@@ -11721,3 +11721,68 @@ DEPRECATION WARNING: ActionView::Template::Handlers::Erubis is deprecated and wi
 [0m
 DEPRECATION WARNING: ActionView::Template::Handlers::Erubis is deprecated and will be removed from Rails 5.2. Switch to ActionView::Template::Handlers::ERB::Erubi instead. (called from <top (required)> at /Users/Thiago/Sites/CanoSerrado/config/environment.rb:5)
 DEPRECATION WARNING: ActionView::Template::Handlers::Erubis is deprecated and will be removed from Rails 5.2. Switch to ActionView::Template::Handlers::ERB::Erubi instead. (called from <top (required)> at /Users/Thiago/Sites/CanoSerrado/config/environment.rb:5)
+Started GET "/" for 127.0.0.1 at 2017-05-22 14:33:26 -0300
+Processing by PagesController#home as HTML
+  [1m[36mAbanda Load (0.5ms)[0m  [1m[34mSELECT  "abandas".* FROM "abandas" WHERE "abandas"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/_banner.html.erb (57.5ms) [cache miss]
+  Rendered pages/_abanda.html.erb (1.7ms) [cache miss]
+  Rendered pages/_agenda.html.erb (1.1ms) [cache miss]
+  Rendered pages/_discografia.html.erb (0.9ms) [cache miss]
+  Rendered pages/_fotos.html.erb (1.0ms) [cache miss]
+  Rendered pages/_videos.html.erb (0.7ms) [cache miss]
+  Rendered pages/_parceiros.html.erb (0.7ms) [cache miss]
+  Rendered pages/_contato.html.erb (0.9ms) [cache miss]
+  Rendered pages/home.html.erb within layouts/application (240.8ms)
+  [1m[36mBanner Load (0.3ms)[0m  [1m[34mSELECT  "banners".* FROM "banners" ORDER BY "banners"."id" ASC LIMIT ?[0m  [["LIMIT", 1]]
+Completed 200 OK in 1005ms (Views: 809.3ms | ActiveRecord: 6.5ms)
+
+
+Started GET "/images/agenda.jpg" for 127.0.0.1 at 2017-05-22 14:33:28 -0300
+  
+ActionController::RoutingError (No route matches [GET] "/images/agenda.jpg"):
+  
+actionpack (5.1.1) lib/action_dispatch/middleware/debug_exceptions.rb:63:in `call'
+web-console (3.5.1) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.5.1) lib/web_console/middleware.rb:28:in `block in call'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `catch'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `call'
+actionpack (5.1.1) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.1.1) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.1.1) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.1.1) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.1.1) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.1.1) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.1.1) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.0) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.1.1) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.1.1) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+rack (2.0.3) lib/rack/method_override.rb:22:in `call'
+rack (2.0.3) lib/rack/runtime.rb:22:in `call'
+activesupport (5.1.1) lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+actionpack (5.1.1) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.1) lib/action_dispatch/middleware/static.rb:125:in `call'
+rack (2.0.3) lib/rack/sendfile.rb:111:in `call'
+railties (5.1.1) lib/rails/engine.rb:522:in `call'
+puma (3.8.2) lib/puma/configuration.rb:224:in `call'
+puma (3.8.2) lib/puma/server.rb:600:in `handle_request'
+puma (3.8.2) lib/puma/server.rb:435:in `process_client'
+puma (3.8.2) lib/puma/server.rb:299:in `block in run'
+puma (3.8.2) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+Started GET "/backend/banner" for 127.0.0.1 at 2017-05-22 14:33:30 -0300
+Processing by RailsAdmin::MainController#index as HTML
+  Parameters: {"model_name"=>"banner"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering /Users/Thiago/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/rails_admin-1.1.1/app/views/rails_admin/main/index.html.haml within layouts/rails_admin/application
+  [1m[36mBanner Load (0.5ms)[0m  [1m[34mSELECT  "banners".* FROM "banners" ORDER BY banners.id desc LIMIT ? OFFSET ?[0m  [["LIMIT", 20], ["OFFSET", 0]]
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT COUNT(*) FROM "banners"[0m
+  Rendered /Users/Thiago/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/rails_admin-1.1.1/app/views/rails_admin/main/index.html.haml within layouts/rails_admin/application (121.3ms)
+  Rendered /Users/Thiago/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/rails_admin-1.1.1/app/views/layouts/rails_admin/_secondary_navigation.html.haml (7.8ms) [cache miss]
+  Rendered /Users/Thiago/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/rails_admin-1.1.1/app/views/layouts/rails_admin/_navigation.html.haml (40.0ms) [cache miss]
+  Rendered /Users/Thiago/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/rails_admin-1.1.1/app/views/layouts/rails_admin/_sidebar_navigation.html.haml (173.4ms) [cache miss]
+  Rendering /Users/Thiago/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/rails_admin-1.1.1/app/views/layouts/rails_admin/pjax.html.haml
+  Rendered /Users/Thiago/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/rails_admin-1.1.1/app/views/layouts/rails_admin/pjax.html.haml (40.5ms)
+Completed 200 OK in 1529ms (Views: 1447.5ms | ActiveRecord: 2.1ms)
+
+
+DEPRECATION WARNING: ActionView::Template::Handlers::Erubis is deprecated and will be removed from Rails 5.2. Switch to ActionView::Template::Handlers::ERB::Erubi instead. (called from <top (required)> at /Users/Thiago/Sites/CanoSerrado/config/environment.rb:5)

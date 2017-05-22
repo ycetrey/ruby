@@ -4,7 +4,7 @@ class CreateAgendas < ActiveRecord::Migration[5.1]
       t.string :title
       t.string :address
       t.string :city
-      t.datetime :event_date
+      t.date :event_date
 
       t.timestamps
     end

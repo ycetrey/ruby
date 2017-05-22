@@ -9,12 +9,19 @@ RailsAdmin.config do |config|
   config.navigation_static_label = "Links uteis"
 
   ### Popular gems integration
-  
+
   ## == Devise ==
   config.authenticate_with do
     warden.authenticate! scope: :user
   end
   config.current_user_method(&:current_user)
+
+  ## == DATEFORMAT == 
+  # config.model Agenda do
+  #   field :event_date, :datet do
+  #     date_format :default
+  #   end
+  # end
 
   ## == Wysiwyg == 
   # config.model Abanda do

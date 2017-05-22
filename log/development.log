@@ -11800,3 +11800,496 @@ Completed 200 OK in 615ms (Views: 371.7ms | ActiveRecord: 22.8ms)
 
 DEPRECATION WARNING: ActionView::Template::Handlers::Erubis is deprecated and will be removed from Rails 5.2. Switch to ActionView::Template::Handlers::ERB::Erubi instead. (called from <top (required)> at /Users/Thiago/Sites/CanoSerrado/config/environment.rb:5)
 DEPRECATION WARNING: ActionView::Template::Handlers::Erubis is deprecated and will be removed from Rails 5.2. Switch to ActionView::Template::Handlers::ERB::Erubi instead. (called from <top (required)> at /Users/Thiago/Sites/CanoSerrado/config/environment.rb:5)
+DEPRECATION WARNING: ActionView::Template::Handlers::Erubis is deprecated and will be removed from Rails 5.2. Switch to ActionView::Template::Handlers::ERB::Erubi instead. (called from <top (required)> at /Users/Thiago/Sites/CanoSerrado/config/environment.rb:5)
+Started GET "/" for 127.0.0.1 at 2017-05-22 16:38:20 -0300
+Processing by PagesController#home as HTML
+  [1m[36mAbanda Load (0.4ms)[0m  [1m[34mSELECT  "abandas".* FROM "abandas" WHERE "abandas"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+Completed 500 Internal Server Error in 105ms (ActiveRecord: 2.7ms)
+
+
+  
+ArgumentError (Unsupported argument type: c (Symbol)):
+  
+app/controllers/pages_controller.rb:5:in `home'
+Started GET "/" for 127.0.0.1 at 2017-05-22 16:38:34 -0300
+Processing by PagesController#home as HTML
+  [1m[36mAbanda Load (0.3ms)[0m  [1m[34mSELECT  "abandas".* FROM "abandas" WHERE "abandas"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/_banner.html.erb (18.5ms) [cache miss]
+  Rendered pages/_abanda.html.erb (1.8ms) [cache miss]
+  Rendered pages/_agenda.html.erb (0.9ms) [cache miss]
+  Rendered pages/_discografia.html.erb (0.7ms) [cache miss]
+  Rendered pages/_fotos.html.erb (0.7ms) [cache miss]
+  Rendered pages/_videos.html.erb (0.6ms) [cache miss]
+  Rendered pages/_parceiros.html.erb (0.5ms) [cache miss]
+  Rendered pages/_contato.html.erb (0.8ms) [cache miss]
+  Rendered pages/home.html.erb within layouts/application (106.4ms)
+  [1m[36mBanner Load (0.3ms)[0m  [1m[34mSELECT  "banners".* FROM "banners" ORDER BY "banners"."id" ASC LIMIT ?[0m  [["LIMIT", 1]]
+Completed 200 OK in 366ms (Views: 275.1ms | ActiveRecord: 3.3ms)
+
+
+Started GET "/images/agenda.jpg" for 127.0.0.1 at 2017-05-22 16:38:35 -0300
+  
+ActionController::RoutingError (No route matches [GET] "/images/agenda.jpg"):
+  
+actionpack (5.1.1) lib/action_dispatch/middleware/debug_exceptions.rb:63:in `call'
+web-console (3.5.1) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.5.1) lib/web_console/middleware.rb:28:in `block in call'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `catch'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `call'
+actionpack (5.1.1) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.1.1) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.1.1) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.1.1) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.1.1) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.1.1) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.1.1) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.0) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.1.1) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.1.1) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+rack (2.0.3) lib/rack/method_override.rb:22:in `call'
+rack (2.0.3) lib/rack/runtime.rb:22:in `call'
+activesupport (5.1.1) lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+actionpack (5.1.1) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.1) lib/action_dispatch/middleware/static.rb:125:in `call'
+rack (2.0.3) lib/rack/sendfile.rb:111:in `call'
+railties (5.1.1) lib/rails/engine.rb:522:in `call'
+puma (3.8.2) lib/puma/configuration.rb:224:in `call'
+puma (3.8.2) lib/puma/server.rb:600:in `handle_request'
+puma (3.8.2) lib/puma/server.rb:435:in `process_client'
+puma (3.8.2) lib/puma/server.rb:299:in `block in run'
+puma (3.8.2) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+Started GET "/backend" for 127.0.0.1 at 2017-05-22 16:38:40 -0300
+Processing by RailsAdmin::MainController#dashboard as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT COUNT(*) FROM "abandas"[0m
+  [1m[36mAbanda Load (0.2ms)[0m  [1m[34mSELECT  "abandas".* FROM "abandas" ORDER BY "abandas"."id" DESC LIMIT ?[0m  [["LIMIT", 1]]
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT COUNT(*) FROM "agendas"[0m
+  [1m[36mAgenda Load (0.2ms)[0m  [1m[34mSELECT  "agendas".* FROM "agendas" ORDER BY "agendas"."id" DESC LIMIT ?[0m  [["LIMIT", 1]]
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT COUNT(*) FROM "banners"[0m
+  [1m[36mBanner Load (0.3ms)[0m  [1m[34mSELECT  "banners".* FROM "banners" ORDER BY "banners"."id" DESC LIMIT ?[0m  [["LIMIT", 1]]
+  [1m[35m (11.7ms)[0m  [1m[34mSELECT COUNT(*) FROM "discografias"[0m
+  [1m[36mDiscografia Load (0.1ms)[0m  [1m[34mSELECT  "discografias".* FROM "discografias" ORDER BY "discografias"."id" DESC LIMIT ?[0m  [["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT COUNT(*) FROM "mp3s"[0m
+  [1m[36mMp3 Load (0.5ms)[0m  [1m[34mSELECT  "mp3s".* FROM "mp3s" ORDER BY "mp3s"."id" DESC LIMIT ?[0m  [["LIMIT", 1]]
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT COUNT(*) FROM "photos"[0m
+  [1m[36mPhoto Load (0.2ms)[0m  [1m[34mSELECT  "photos".* FROM "photos" ORDER BY "photos"."id" DESC LIMIT ?[0m  [["LIMIT", 1]]
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT COUNT(*) FROM "users"[0m
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" ORDER BY "users"."id" DESC LIMIT ?[0m  [["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT COUNT(*) FROM "videos"[0m
+  [1m[36mVideo Load (0.2ms)[0m  [1m[34mSELECT  "videos".* FROM "videos" ORDER BY "videos"."id" DESC LIMIT ?[0m  [["LIMIT", 1]]
+  Rendering /Users/Thiago/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/rails_admin-1.1.1/app/views/rails_admin/main/dashboard.html.haml within layouts/rails_admin/application
+  Rendered /Users/Thiago/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/rails_admin-1.1.1/app/views/rails_admin/main/dashboard.html.haml within layouts/rails_admin/application (55.0ms)
+  Rendered /Users/Thiago/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/rails_admin-1.1.1/app/views/layouts/rails_admin/_secondary_navigation.html.haml (8.8ms) [cache miss]
+  Rendered /Users/Thiago/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/rails_admin-1.1.1/app/views/layouts/rails_admin/_navigation.html.haml (31.0ms) [cache miss]
+  Rendered /Users/Thiago/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/rails_admin-1.1.1/app/views/layouts/rails_admin/_sidebar_navigation.html.haml (15.8ms) [cache miss]
+  Rendering /Users/Thiago/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/rails_admin-1.1.1/app/views/layouts/rails_admin/pjax.html.haml
+  Rendered /Users/Thiago/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/rails_admin-1.1.1/app/views/layouts/rails_admin/pjax.html.haml (6.1ms)
+Completed 200 OK in 735ms (Views: 556.6ms | ActiveRecord: 21.2ms)
+
+
+Started GET "/backend/agenda?_pjax=%5Bdata-pjax-container%5D" for 127.0.0.1 at 2017-05-22 16:38:44 -0300
+Processing by RailsAdmin::MainController#index as HTML
+  Parameters: {"_pjax"=>"[data-pjax-container]", "model_name"=>"agenda"}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering /Users/Thiago/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/rails_admin-1.1.1/app/views/rails_admin/main/index.html.haml within layouts/rails_admin/pjax
+  [1m[36mAgenda Load (0.5ms)[0m  [1m[34mSELECT  "agendas".* FROM "agendas" ORDER BY agendas.id desc LIMIT ? OFFSET ?[0m  [["LIMIT", 20], ["OFFSET", 0]]
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT COUNT(*) FROM "agendas"[0m
+  Rendered /Users/Thiago/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/rails_admin-1.1.1/app/views/rails_admin/main/index.html.haml within layouts/rails_admin/pjax (117.9ms)
+Completed 200 OK in 268ms (Views: 208.5ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/backend/agenda/new?_pjax=%5Bdata-pjax-container%5D" for 127.0.0.1 at 2017-05-22 16:38:47 -0300
+Processing by RailsAdmin::MainController#new as HTML
+  Parameters: {"_pjax"=>"[data-pjax-container]", "model_name"=>"agenda"}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering /Users/Thiago/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/rails_admin-1.1.1/app/views/rails_admin/main/new.html.haml within layouts/rails_admin/pjax
+  Rendered /Users/Thiago/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/rails_admin-1.1.1/app/views/rails_admin/main/_form_field.html.haml (2.4ms) [cache miss]
+  Rendered /Users/Thiago/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/rails_admin-1.1.1/app/views/rails_admin/main/_form_field.html.haml (0.5ms) [cache miss]
+  Rendered /Users/Thiago/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/rails_admin-1.1.1/app/views/rails_admin/main/_form_field.html.haml (0.5ms) [cache miss]
+  Rendered /Users/Thiago/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/rails_admin-1.1.1/app/views/rails_admin/main/_form_datetime.html.haml (3.4ms) [cache miss]
+  Rendered /Users/Thiago/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/rails_admin-1.1.1/app/views/rails_admin/main/_submit_buttons.html.haml (7.3ms) [cache miss]
+  Rendered /Users/Thiago/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/rails_admin-1.1.1/app/views/rails_admin/main/new.html.haml within layouts/rails_admin/pjax (94.6ms)
+Completed 200 OK in 174ms (Views: 132.8ms | ActiveRecord: 0.4ms)
+
+
+Started POST "/backend/agenda/new" for 127.0.0.1 at 2017-05-22 16:38:55 -0300
+Processing by RailsAdmin::MainController#new as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"JghxF0V4SEfownvSYYQEC1jR0OAb0IOrpRDtcBjfw22kXWsKTxg/UHxGl4tEoFS0MdmGZ9jT5fYJ2+cKRvtNSA==", "agenda"=>{"title"=>"Toxic Metal Fest - com Ratos de Porão e Zombie Crew 1", "address"=>"Adega Nóstra-vamos", "city"=>"Cascavel - PR", "event_date"=>"Maio 22, 2017 16:38"}, "return_to"=>"http://localhost:3000/backend/agenda", "_save"=>"", "model_name"=>"agenda"}
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.9ms)[0m  [1m[32mINSERT INTO "agendas" ("title", "address", "city", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["title", "Toxic Metal Fest - com Ratos de Porão e Zombie Crew 1"], ["address", "Adega Nóstra-vamos"], ["city", "Cascavel - PR"], ["created_at", "2017-05-22 19:38:55.047485"], ["updated_at", "2017-05-22 19:38:55.047485"]]
+  [1m[35m (2.3ms)[0m  [1m[36mcommit transaction[0m
+Redirected to http://localhost:3000/backend/agenda
+Completed 302 Found in 49ms (ActiveRecord: 4.0ms)
+
+
+Started GET "/backend/agenda" for 127.0.0.1 at 2017-05-22 16:38:55 -0300
+Processing by RailsAdmin::MainController#index as HTML
+  Parameters: {"model_name"=>"agenda"}
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering /Users/Thiago/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/rails_admin-1.1.1/app/views/rails_admin/main/index.html.haml within layouts/rails_admin/application
+  [1m[36mAgenda Load (0.4ms)[0m  [1m[34mSELECT  "agendas".* FROM "agendas" ORDER BY agendas.id desc LIMIT ? OFFSET ?[0m  [["LIMIT", 20], ["OFFSET", 0]]
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT COUNT(*) FROM "agendas"[0m
+  Rendered /Users/Thiago/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/rails_admin-1.1.1/app/views/rails_admin/main/index.html.haml within layouts/rails_admin/application (88.6ms)
+  Rendered /Users/Thiago/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/rails_admin-1.1.1/app/views/layouts/rails_admin/_secondary_navigation.html.haml (10.6ms) [cache miss]
+  Rendered /Users/Thiago/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/rails_admin-1.1.1/app/views/layouts/rails_admin/_navigation.html.haml (40.6ms) [cache miss]
+  Rendered /Users/Thiago/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/rails_admin-1.1.1/app/views/layouts/rails_admin/_sidebar_navigation.html.haml (21.6ms) [cache miss]
+  Rendering /Users/Thiago/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/rails_admin-1.1.1/app/views/layouts/rails_admin/pjax.html.haml
+  Rendered /Users/Thiago/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/rails_admin-1.1.1/app/views/layouts/rails_admin/pjax.html.haml (25.9ms)
+Completed 200 OK in 516ms (Views: 491.5ms | ActiveRecord: 1.4ms)
+
+
+Started GET "/backend/agenda" for 127.0.0.1 at 2017-05-22 16:39:07 -0300
+Processing by RailsAdmin::MainController#index as HTML
+  Parameters: {"model_name"=>"agenda"}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering /Users/Thiago/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/rails_admin-1.1.1/app/views/rails_admin/main/index.html.haml within layouts/rails_admin/application
+  [1m[36mAgenda Load (0.3ms)[0m  [1m[34mSELECT  "agendas".* FROM "agendas" ORDER BY agendas.id desc LIMIT ? OFFSET ?[0m  [["LIMIT", 20], ["OFFSET", 0]]
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT COUNT(*) FROM "agendas"[0m
+  Rendered /Users/Thiago/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/rails_admin-1.1.1/app/views/rails_admin/main/index.html.haml within layouts/rails_admin/application (144.9ms)
+  Rendered /Users/Thiago/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/rails_admin-1.1.1/app/views/layouts/rails_admin/_secondary_navigation.html.haml (8.0ms) [cache miss]
+  Rendered /Users/Thiago/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/rails_admin-1.1.1/app/views/layouts/rails_admin/_navigation.html.haml (23.9ms) [cache miss]
+  Rendered /Users/Thiago/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/rails_admin-1.1.1/app/views/layouts/rails_admin/_sidebar_navigation.html.haml (17.8ms) [cache miss]
+  Rendering /Users/Thiago/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/rails_admin-1.1.1/app/views/layouts/rails_admin/pjax.html.haml
+  Rendered /Users/Thiago/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/rails_admin-1.1.1/app/views/layouts/rails_admin/pjax.html.haml (13.7ms)
+Completed 200 OK in 621ms (Views: 590.3ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/backend/agenda/1/edit?_pjax=%5Bdata-pjax-container%5D" for 127.0.0.1 at 2017-05-22 16:39:10 -0300
+Processing by RailsAdmin::MainController#edit as HTML
+  Parameters: {"_pjax"=>"[data-pjax-container]", "model_name"=>"agenda", "id"=>"1"}
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mAgenda Load (0.4ms)[0m  [1m[34mSELECT  "agendas".* FROM "agendas" WHERE "agendas"."id" = ? ORDER BY "agendas"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering /Users/Thiago/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/rails_admin-1.1.1/app/views/rails_admin/main/edit.html.haml within layouts/rails_admin/pjax
+  Rendered /Users/Thiago/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/rails_admin-1.1.1/app/views/rails_admin/main/_form_field.html.haml (1.7ms) [cache miss]
+  Rendered /Users/Thiago/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/rails_admin-1.1.1/app/views/rails_admin/main/_form_field.html.haml (0.5ms) [cache miss]
+  Rendered /Users/Thiago/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/rails_admin-1.1.1/app/views/rails_admin/main/_form_field.html.haml (0.5ms) [cache miss]
+  Rendered /Users/Thiago/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/rails_admin-1.1.1/app/views/rails_admin/main/_form_datetime.html.haml (17.3ms) [cache miss]
+  Rendered /Users/Thiago/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/rails_admin-1.1.1/app/views/rails_admin/main/_submit_buttons.html.haml (21.1ms) [cache miss]
+  Rendered /Users/Thiago/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/rails_admin-1.1.1/app/views/rails_admin/main/edit.html.haml within layouts/rails_admin/pjax (129.8ms)
+Completed 200 OK in 222ms (Views: 196.5ms | ActiveRecord: 0.9ms)
+
+
+DEPRECATION WARNING: ActionView::Template::Handlers::Erubis is deprecated and will be removed from Rails 5.2. Switch to ActionView::Template::Handlers::ERB::Erubi instead. (called from <top (required)> at /Users/Thiago/Sites/CanoSerrado/config/environment.rb:5)
+DEPRECATION WARNING: ActionView::Template::Handlers::Erubis is deprecated and will be removed from Rails 5.2. Switch to ActionView::Template::Handlers::ERB::Erubi instead. (called from <top (required)> at /Users/Thiago/Sites/CanoSerrado/config/environment.rb:5)
+DEPRECATION WARNING: ActionView::Template::Handlers::Erubis is deprecated and will be removed from Rails 5.2. Switch to ActionView::Template::Handlers::ERB::Erubi instead. (called from <top (required)> at /Users/Thiago/Sites/CanoSerrado/config/environment.rb:5)
+DEPRECATION WARNING: ActionView::Template::Handlers::Erubis is deprecated and will be removed from Rails 5.2. Switch to ActionView::Template::Handlers::ERB::Erubi instead. (called from <top (required)> at /Users/Thiago/Sites/CanoSerrado/config/environment.rb:5)
+DEPRECATION WARNING: ActionView::Template::Handlers::Erubis is deprecated and will be removed from Rails 5.2. Switch to ActionView::Template::Handlers::ERB::Erubi instead. (called from <top (required)> at /Users/Thiago/Sites/CanoSerrado/config/environment.rb:5)
+Started GET "/backend/agenda/1/edit" for 127.0.0.1 at 2017-05-22 16:41:24 -0300
+  [1m[35m (0.8ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by RailsAdmin::MainController#edit as HTML
+  Parameters: {"model_name"=>"agenda", "id"=>"1"}
+  [1m[36mUser Load (12.9ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mAgenda Load (8.8ms)[0m  [1m[34mSELECT  "agendas".* FROM "agendas" WHERE "agendas"."id" = ? ORDER BY "agendas"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering /Users/Thiago/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/rails_admin-1.1.1/app/views/rails_admin/main/edit.html.haml within layouts/rails_admin/application
+  Rendered /Users/Thiago/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/rails_admin-1.1.1/app/views/rails_admin/main/_form_field.html.haml (4.7ms) [cache miss]
+  Rendered /Users/Thiago/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/rails_admin-1.1.1/app/views/rails_admin/main/_form_field.html.haml (0.6ms) [cache miss]
+  Rendered /Users/Thiago/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/rails_admin-1.1.1/app/views/rails_admin/main/_form_field.html.haml (0.5ms) [cache miss]
+  Rendered /Users/Thiago/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/rails_admin-1.1.1/app/views/rails_admin/main/_form_datetime.html.haml (3.8ms) [cache miss]
+  Rendered /Users/Thiago/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/rails_admin-1.1.1/app/views/rails_admin/main/_submit_buttons.html.haml (8.9ms) [cache miss]
+  Rendered /Users/Thiago/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/rails_admin-1.1.1/app/views/rails_admin/main/edit.html.haml within layouts/rails_admin/application (107.6ms)
+  Rendered /Users/Thiago/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/rails_admin-1.1.1/app/views/layouts/rails_admin/_secondary_navigation.html.haml (32.0ms) [cache miss]
+  Rendered /Users/Thiago/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/rails_admin-1.1.1/app/views/layouts/rails_admin/_navigation.html.haml (55.9ms) [cache miss]
+  Rendered /Users/Thiago/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/rails_admin-1.1.1/app/views/layouts/rails_admin/_sidebar_navigation.html.haml (22.6ms) [cache miss]
+  Rendering /Users/Thiago/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/rails_admin-1.1.1/app/views/layouts/rails_admin/pjax.html.haml
+  Rendered /Users/Thiago/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/rails_admin-1.1.1/app/views/layouts/rails_admin/pjax.html.haml (37.3ms)
+Completed 200 OK in 3495ms (Views: 2740.2ms | ActiveRecord: 23.7ms)
+
+
+Started PUT "/backend/agenda/1/edit" for 127.0.0.1 at 2017-05-22 16:41:31 -0300
+Processing by RailsAdmin::MainController#edit as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"DRY56pVlFg+vZJ5/Lno10DV9EtHTo4WSmie4W3ppzNmI806gaTn9jJ5zEXDGmGxRXonLSblQ4YvWY20Ri7nB4A==", "agenda"=>{"title"=>"Toxic Metal Fest - com Ratos de Porão e Zombie Crew 1", "address"=>"Adega Nóstra-vamos", "city"=>"Cascavel - PR", "event_date"=>"Maio 22, 2017 16:41"}, "return_to"=>"http://localhost:3000/backend/agenda/new", "_save"=>"", "model_name"=>"agenda", "id"=>"1"}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mAgenda Load (0.5ms)[0m  [1m[34mSELECT  "agendas".* FROM "agendas" WHERE "agendas"."id" = ? ORDER BY "agendas"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[35m (0.2ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mcommit transaction[0m
+Redirected to http://localhost:3000/backend/agenda/new
+Completed 302 Found in 51ms (ActiveRecord: 1.2ms)
+
+
+Started GET "/backend/agenda/new" for 127.0.0.1 at 2017-05-22 16:41:31 -0300
+Processing by RailsAdmin::MainController#new as HTML
+  Parameters: {"model_name"=>"agenda"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering /Users/Thiago/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/rails_admin-1.1.1/app/views/rails_admin/main/new.html.haml within layouts/rails_admin/application
+  Rendered /Users/Thiago/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/rails_admin-1.1.1/app/views/rails_admin/main/_form_field.html.haml (2.3ms) [cache miss]
+  Rendered /Users/Thiago/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/rails_admin-1.1.1/app/views/rails_admin/main/_form_field.html.haml (0.6ms) [cache miss]
+  Rendered /Users/Thiago/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/rails_admin-1.1.1/app/views/rails_admin/main/_form_field.html.haml (1.1ms) [cache miss]
+  Rendered /Users/Thiago/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/rails_admin-1.1.1/app/views/rails_admin/main/_form_datetime.html.haml (3.1ms) [cache miss]
+  Rendered /Users/Thiago/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/rails_admin-1.1.1/app/views/rails_admin/main/_submit_buttons.html.haml (10.1ms) [cache miss]
+  Rendered /Users/Thiago/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/rails_admin-1.1.1/app/views/rails_admin/main/new.html.haml within layouts/rails_admin/application (89.6ms)
+  Rendered /Users/Thiago/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/rails_admin-1.1.1/app/views/layouts/rails_admin/_secondary_navigation.html.haml (13.0ms) [cache miss]
+  Rendered /Users/Thiago/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/rails_admin-1.1.1/app/views/layouts/rails_admin/_navigation.html.haml (34.2ms) [cache miss]
+  Rendered /Users/Thiago/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/rails_admin-1.1.1/app/views/layouts/rails_admin/_sidebar_navigation.html.haml (28.6ms) [cache miss]
+  Rendering /Users/Thiago/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/rails_admin-1.1.1/app/views/layouts/rails_admin/pjax.html.haml
+  Rendered /Users/Thiago/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/rails_admin-1.1.1/app/views/layouts/rails_admin/pjax.html.haml (19.9ms)
+Completed 200 OK in 660ms (Views: 640.7ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/backend/agenda?_pjax=%5Bdata-pjax-container%5D" for 127.0.0.1 at 2017-05-22 16:41:35 -0300
+Processing by RailsAdmin::MainController#index as HTML
+  Parameters: {"_pjax"=>"[data-pjax-container]", "model_name"=>"agenda"}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering /Users/Thiago/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/rails_admin-1.1.1/app/views/rails_admin/main/index.html.haml within layouts/rails_admin/pjax
+  [1m[36mAgenda Load (0.3ms)[0m  [1m[34mSELECT  "agendas".* FROM "agendas" ORDER BY agendas.id desc LIMIT ? OFFSET ?[0m  [["LIMIT", 20], ["OFFSET", 0]]
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT COUNT(*) FROM "agendas"[0m
+  Rendered /Users/Thiago/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/rails_admin-1.1.1/app/views/rails_admin/main/index.html.haml within layouts/rails_admin/pjax (164.5ms)
+Completed 200 OK in 254ms (Views: 221.7ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/backend/agenda/1?_pjax=%5Bdata-pjax-container%5D" for 127.0.0.1 at 2017-05-22 16:41:39 -0300
+Processing by RailsAdmin::MainController#show as HTML
+  Parameters: {"_pjax"=>"[data-pjax-container]", "model_name"=>"agenda", "id"=>"1"}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mAgenda Load (0.5ms)[0m  [1m[34mSELECT  "agendas".* FROM "agendas" WHERE "agendas"."id" = ? ORDER BY "agendas"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering /Users/Thiago/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/rails_admin-1.1.1/app/views/rails_admin/main/show.html.haml within layouts/rails_admin/pjax
+  Rendered /Users/Thiago/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/rails_admin-1.1.1/app/views/rails_admin/main/show.html.haml within layouts/rails_admin/pjax (17.7ms)
+Completed 200 OK in 143ms (Views: 81.8ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/backend/agenda/1/edit?_pjax=%5Bdata-pjax-container%5D" for 127.0.0.1 at 2017-05-22 16:41:41 -0300
+Processing by RailsAdmin::MainController#edit as HTML
+  Parameters: {"_pjax"=>"[data-pjax-container]", "model_name"=>"agenda", "id"=>"1"}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mAgenda Load (0.5ms)[0m  [1m[34mSELECT  "agendas".* FROM "agendas" WHERE "agendas"."id" = ? ORDER BY "agendas"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering /Users/Thiago/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/rails_admin-1.1.1/app/views/rails_admin/main/edit.html.haml within layouts/rails_admin/pjax
+  Rendered /Users/Thiago/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/rails_admin-1.1.1/app/views/rails_admin/main/_form_field.html.haml (3.4ms) [cache miss]
+  Rendered /Users/Thiago/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/rails_admin-1.1.1/app/views/rails_admin/main/_form_field.html.haml (0.5ms) [cache miss]
+  Rendered /Users/Thiago/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/rails_admin-1.1.1/app/views/rails_admin/main/_form_field.html.haml (0.6ms) [cache miss]
+  Rendered /Users/Thiago/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/rails_admin-1.1.1/app/views/rails_admin/main/_form_datetime.html.haml (3.5ms) [cache miss]
+  Rendered /Users/Thiago/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/rails_admin-1.1.1/app/views/rails_admin/main/_submit_buttons.html.haml (11.4ms) [cache miss]
+  Rendered /Users/Thiago/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/rails_admin-1.1.1/app/views/rails_admin/main/edit.html.haml within layouts/rails_admin/pjax (83.6ms)
+Completed 200 OK in 195ms (Views: 146.9ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/backend/agenda?_pjax=%5Bdata-pjax-container%5D" for 127.0.0.1 at 2017-05-22 16:43:07 -0300
+Processing by RailsAdmin::MainController#index as HTML
+  Parameters: {"_pjax"=>"[data-pjax-container]", "model_name"=>"agenda"}
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering /Users/Thiago/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/rails_admin-1.1.1/app/views/rails_admin/main/index.html.haml within layouts/rails_admin/pjax
+  [1m[36mAgenda Load (0.3ms)[0m  [1m[34mSELECT  "agendas".* FROM "agendas" ORDER BY agendas.id desc LIMIT ? OFFSET ?[0m  [["LIMIT", 20], ["OFFSET", 0]]
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT COUNT(*) FROM "agendas"[0m
+  Rendered /Users/Thiago/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/rails_admin-1.1.1/app/views/rails_admin/main/index.html.haml within layouts/rails_admin/pjax (65.7ms)
+Completed 200 OK in 129ms (Views: 110.3ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/backend/agenda/1/edit?_pjax=%5Bdata-pjax-container%5D" for 127.0.0.1 at 2017-05-22 16:43:11 -0300
+Processing by RailsAdmin::MainController#edit as HTML
+  Parameters: {"_pjax"=>"[data-pjax-container]", "model_name"=>"agenda", "id"=>"1"}
+  [1m[36mUser Load (1.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mAgenda Load (0.7ms)[0m  [1m[34mSELECT  "agendas".* FROM "agendas" WHERE "agendas"."id" = ? ORDER BY "agendas"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering /Users/Thiago/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/rails_admin-1.1.1/app/views/rails_admin/main/edit.html.haml within layouts/rails_admin/pjax
+  Rendered /Users/Thiago/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/rails_admin-1.1.1/app/views/rails_admin/main/_form_field.html.haml (1.8ms) [cache miss]
+  Rendered /Users/Thiago/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/rails_admin-1.1.1/app/views/rails_admin/main/_form_field.html.haml (0.4ms) [cache miss]
+  Rendered /Users/Thiago/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/rails_admin-1.1.1/app/views/rails_admin/main/_form_field.html.haml (0.4ms) [cache miss]
+  Rendered /Users/Thiago/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/rails_admin-1.1.1/app/views/rails_admin/main/_form_datetime.html.haml (2.9ms) [cache miss]
+  Rendered /Users/Thiago/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/rails_admin-1.1.1/app/views/rails_admin/main/_submit_buttons.html.haml (6.6ms) [cache miss]
+  Rendered /Users/Thiago/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/rails_admin-1.1.1/app/views/rails_admin/main/edit.html.haml within layouts/rails_admin/pjax (69.6ms)
+Completed 200 OK in 149ms (Views: 107.3ms | ActiveRecord: 2.1ms)
+
+
+Started GET "/backend/agenda?_pjax=%5Bdata-pjax-container%5D" for 127.0.0.1 at 2017-05-22 16:47:26 -0300
+Processing by RailsAdmin::MainController#index as HTML
+  Parameters: {"_pjax"=>"[data-pjax-container]", "model_name"=>"agenda"}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering /Users/Thiago/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/rails_admin-1.1.1/app/views/rails_admin/main/index.html.haml within layouts/rails_admin/pjax
+  [1m[36mAgenda Load (0.3ms)[0m  [1m[34mSELECT  "agendas".* FROM "agendas" ORDER BY agendas.id desc LIMIT ? OFFSET ?[0m  [["LIMIT", 20], ["OFFSET", 0]]
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT COUNT(*) FROM "agendas"[0m
+  Rendered /Users/Thiago/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/rails_admin-1.1.1/app/views/rails_admin/main/index.html.haml within layouts/rails_admin/pjax (81.1ms)
+Completed 200 OK in 247ms (Views: 202.0ms | ActiveRecord: 1.0ms)
+
+
+DEPRECATION WARNING: ActionView::Template::Handlers::Erubis is deprecated and will be removed from Rails 5.2. Switch to ActionView::Template::Handlers::ERB::Erubi instead. (called from <top (required)> at /Users/Thiago/Sites/CanoSerrado/config/environment.rb:5)
+DEPRECATION WARNING: ActionView::Template::Handlers::Erubis is deprecated and will be removed from Rails 5.2. Switch to ActionView::Template::Handlers::ERB::Erubi instead. (called from <top (required)> at /Users/Thiago/Sites/CanoSerrado/config/environment.rb:5)
+Started GET "/backend/agenda" for 127.0.0.1 at 2017-05-22 16:47:46 -0300
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by RailsAdmin::MainController#index as HTML
+  Parameters: {"model_name"=>"agenda"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering /Users/Thiago/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/rails_admin-1.1.1/app/views/rails_admin/main/index.html.haml within layouts/rails_admin/application
+  [1m[36mAgenda Load (0.4ms)[0m  [1m[34mSELECT  "agendas".* FROM "agendas" ORDER BY agendas.id desc LIMIT ? OFFSET ?[0m  [["LIMIT", 20], ["OFFSET", 0]]
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT COUNT(*) FROM "agendas"[0m
+  Rendered /Users/Thiago/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/rails_admin-1.1.1/app/views/rails_admin/main/index.html.haml within layouts/rails_admin/application (125.7ms)
+  Rendered /Users/Thiago/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/rails_admin-1.1.1/app/views/layouts/rails_admin/_secondary_navigation.html.haml (25.8ms) [cache miss]
+  Rendered /Users/Thiago/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/rails_admin-1.1.1/app/views/layouts/rails_admin/_navigation.html.haml (46.6ms) [cache miss]
+  Rendered /Users/Thiago/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/rails_admin-1.1.1/app/views/layouts/rails_admin/_sidebar_navigation.html.haml (21.9ms) [cache miss]
+  Rendering /Users/Thiago/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/rails_admin-1.1.1/app/views/layouts/rails_admin/pjax.html.haml
+  Rendered /Users/Thiago/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/rails_admin-1.1.1/app/views/layouts/rails_admin/pjax.html.haml (23.7ms)
+Completed 200 OK in 5173ms (Views: 4505.9ms | ActiveRecord: 3.5ms)
+
+
+Started GET "/backend/agenda/1?_pjax=%5Bdata-pjax-container%5D" for 127.0.0.1 at 2017-05-22 16:47:55 -0300
+Processing by RailsAdmin::MainController#show as HTML
+  Parameters: {"_pjax"=>"[data-pjax-container]", "model_name"=>"agenda", "id"=>"1"}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mAgenda Load (0.3ms)[0m  [1m[34mSELECT  "agendas".* FROM "agendas" WHERE "agendas"."id" = ? ORDER BY "agendas"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering /Users/Thiago/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/rails_admin-1.1.1/app/views/rails_admin/main/show.html.haml within layouts/rails_admin/pjax
+  Rendered /Users/Thiago/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/rails_admin-1.1.1/app/views/rails_admin/main/show.html.haml within layouts/rails_admin/pjax (7.7ms)
+Completed 200 OK in 73ms (Views: 54.0ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/backend/agenda/1/edit?_pjax=%5Bdata-pjax-container%5D" for 127.0.0.1 at 2017-05-22 16:47:57 -0300
+Processing by RailsAdmin::MainController#edit as HTML
+  Parameters: {"_pjax"=>"[data-pjax-container]", "model_name"=>"agenda", "id"=>"1"}
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mAgenda Load (0.4ms)[0m  [1m[34mSELECT  "agendas".* FROM "agendas" WHERE "agendas"."id" = ? ORDER BY "agendas"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering /Users/Thiago/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/rails_admin-1.1.1/app/views/rails_admin/main/edit.html.haml within layouts/rails_admin/pjax
+  Rendered /Users/Thiago/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/rails_admin-1.1.1/app/views/rails_admin/main/_form_field.html.haml (4.0ms) [cache miss]
+  Rendered /Users/Thiago/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/rails_admin-1.1.1/app/views/rails_admin/main/_form_field.html.haml (0.5ms) [cache miss]
+  Rendered /Users/Thiago/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/rails_admin-1.1.1/app/views/rails_admin/main/_form_field.html.haml (0.4ms) [cache miss]
+  Rendered /Users/Thiago/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/rails_admin-1.1.1/app/views/rails_admin/main/_form_datetime.html.haml (5.3ms) [cache miss]
+  Rendered /Users/Thiago/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/rails_admin-1.1.1/app/views/rails_admin/main/_submit_buttons.html.haml (10.8ms) [cache miss]
+  Rendered /Users/Thiago/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/rails_admin-1.1.1/app/views/rails_admin/main/edit.html.haml within layouts/rails_admin/pjax (120.9ms)
+Completed 200 OK in 231ms (Views: 183.3ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/backend/agenda/1?_pjax=%5Bdata-pjax-container%5D" for 127.0.0.1 at 2017-05-22 16:47:59 -0300
+Processing by RailsAdmin::MainController#show as HTML
+  Parameters: {"_pjax"=>"[data-pjax-container]", "model_name"=>"agenda", "id"=>"1"}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mAgenda Load (0.6ms)[0m  [1m[34mSELECT  "agendas".* FROM "agendas" WHERE "agendas"."id" = ? ORDER BY "agendas"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering /Users/Thiago/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/rails_admin-1.1.1/app/views/rails_admin/main/show.html.haml within layouts/rails_admin/pjax
+  Rendered /Users/Thiago/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/rails_admin-1.1.1/app/views/rails_admin/main/show.html.haml within layouts/rails_admin/pjax (7.7ms)
+Completed 200 OK in 104ms (Views: 41.8ms | ActiveRecord: 1.0ms)
+
+
+DEPRECATION WARNING: ActionView::Template::Handlers::Erubis is deprecated and will be removed from Rails 5.2. Switch to ActionView::Template::Handlers::ERB::Erubi instead. (called from <top (required)> at /Users/Thiago/Sites/CanoSerrado/config/environment.rb:5)
+DEPRECATION WARNING: ActionView::Template::Handlers::Erubis is deprecated and will be removed from Rails 5.2. Switch to ActionView::Template::Handlers::ERB::Erubi instead. (called from <top (required)> at /Users/Thiago/Sites/CanoSerrado/config/environment.rb:5)
+Started GET "/backend/agenda?_pjax=%5Bdata-pjax-container%5D" for 127.0.0.1 at 2017-05-22 16:48:44 -0300
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by RailsAdmin::MainController#index as HTML
+  Parameters: {"_pjax"=>"[data-pjax-container]", "model_name"=>"agenda"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering /Users/Thiago/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/rails_admin-1.1.1/app/views/rails_admin/main/index.html.haml within layouts/rails_admin/pjax
+  [1m[36mAgenda Load (0.3ms)[0m  [1m[34mSELECT  "agendas".* FROM "agendas" ORDER BY agendas.id desc LIMIT ? OFFSET ?[0m  [["LIMIT", 20], ["OFFSET", 0]]
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT COUNT(*) FROM "agendas"[0m
+  Rendered /Users/Thiago/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/rails_admin-1.1.1/app/views/rails_admin/main/index.html.haml within layouts/rails_admin/pjax (93.3ms)
+Completed 200 OK in 826ms (Views: 159.7ms | ActiveRecord: 3.8ms)
+
+
+Started GET "/backend/agenda?_pjax=%5Bdata-pjax-container%5D" for 127.0.0.1 at 2017-05-22 16:48:50 -0300
+Processing by RailsAdmin::MainController#index as HTML
+  Parameters: {"_pjax"=>"[data-pjax-container]", "model_name"=>"agenda"}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering /Users/Thiago/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/rails_admin-1.1.1/app/views/rails_admin/main/index.html.haml within layouts/rails_admin/pjax
+  [1m[36mAgenda Load (0.3ms)[0m  [1m[34mSELECT  "agendas".* FROM "agendas" ORDER BY agendas.id desc LIMIT ? OFFSET ?[0m  [["LIMIT", 20], ["OFFSET", 0]]
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT COUNT(*) FROM "agendas"[0m
+  Rendered /Users/Thiago/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/rails_admin-1.1.1/app/views/rails_admin/main/index.html.haml within layouts/rails_admin/pjax (63.1ms)
+Completed 200 OK in 137ms (Views: 103.3ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/backend/agenda?_pjax=%5Bdata-pjax-container%5D" for 127.0.0.1 at 2017-05-22 16:48:51 -0300
+Processing by RailsAdmin::MainController#index as HTML
+  Parameters: {"_pjax"=>"[data-pjax-container]", "model_name"=>"agenda"}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering /Users/Thiago/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/rails_admin-1.1.1/app/views/rails_admin/main/index.html.haml within layouts/rails_admin/pjax
+  [1m[36mAgenda Load (0.5ms)[0m  [1m[34mSELECT  "agendas".* FROM "agendas" ORDER BY agendas.id desc LIMIT ? OFFSET ?[0m  [["LIMIT", 20], ["OFFSET", 0]]
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT COUNT(*) FROM "agendas"[0m
+  Rendered /Users/Thiago/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/rails_admin-1.1.1/app/views/rails_admin/main/index.html.haml within layouts/rails_admin/pjax (102.6ms)
+Completed 200 OK in 199ms (Views: 153.7ms | ActiveRecord: 1.2ms)
+
+
+Started GET "/backend/abanda?_pjax=%5Bdata-pjax-container%5D" for 127.0.0.1 at 2017-05-22 16:48:51 -0300
+Processing by RailsAdmin::MainController#index as HTML
+  Parameters: {"_pjax"=>"[data-pjax-container]", "model_name"=>"abanda"}
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering /Users/Thiago/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/rails_admin-1.1.1/app/views/rails_admin/main/index.html.haml within layouts/rails_admin/pjax
+  [1m[36mAbanda Load (0.3ms)[0m  [1m[34mSELECT  "abandas".* FROM "abandas" ORDER BY abandas.id desc LIMIT ? OFFSET ?[0m  [["LIMIT", 20], ["OFFSET", 0]]
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT COUNT(*) FROM "abandas"[0m
+  Rendered /Users/Thiago/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/rails_admin-1.1.1/app/views/rails_admin/main/index.html.haml within layouts/rails_admin/pjax (57.8ms)
+Completed 200 OK in 168ms (Views: 85.9ms | ActiveRecord: 3.4ms)
+
+
+Started GET "/backend/agenda?_pjax=%5Bdata-pjax-container%5D" for 127.0.0.1 at 2017-05-22 16:48:52 -0300
+Processing by RailsAdmin::MainController#index as HTML
+  Parameters: {"_pjax"=>"[data-pjax-container]", "model_name"=>"agenda"}
+  [1m[36mUser Load (0.9ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering /Users/Thiago/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/rails_admin-1.1.1/app/views/rails_admin/main/index.html.haml within layouts/rails_admin/pjax
+  [1m[36mAgenda Load (0.3ms)[0m  [1m[34mSELECT  "agendas".* FROM "agendas" ORDER BY agendas.id desc LIMIT ? OFFSET ?[0m  [["LIMIT", 20], ["OFFSET", 0]]
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT COUNT(*) FROM "agendas"[0m
+  Rendered /Users/Thiago/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/rails_admin-1.1.1/app/views/rails_admin/main/index.html.haml within layouts/rails_admin/pjax (51.1ms)
+Completed 200 OK in 113ms (Views: 79.7ms | ActiveRecord: 1.8ms)
+
+
+Started GET "/backend/agenda/1?_pjax=%5Bdata-pjax-container%5D" for 127.0.0.1 at 2017-05-22 16:48:54 -0300
+Processing by RailsAdmin::MainController#show as HTML
+  Parameters: {"_pjax"=>"[data-pjax-container]", "model_name"=>"agenda", "id"=>"1"}
+  [1m[36mUser Load (1.8ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mAgenda Load (0.4ms)[0m  [1m[34mSELECT  "agendas".* FROM "agendas" WHERE "agendas"."id" = ? ORDER BY "agendas"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering /Users/Thiago/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/rails_admin-1.1.1/app/views/rails_admin/main/show.html.haml within layouts/rails_admin/pjax
+  Rendered /Users/Thiago/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/rails_admin-1.1.1/app/views/rails_admin/main/show.html.haml within layouts/rails_admin/pjax (4.3ms)
+Completed 200 OK in 132ms (Views: 81.4ms | ActiveRecord: 2.1ms)
+
+
+Started GET "/backend/agenda/1/edit?_pjax=%5Bdata-pjax-container%5D" for 127.0.0.1 at 2017-05-22 16:48:56 -0300
+Processing by RailsAdmin::MainController#edit as HTML
+  Parameters: {"_pjax"=>"[data-pjax-container]", "model_name"=>"agenda", "id"=>"1"}
+  [1m[36mUser Load (1.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mAgenda Load (0.4ms)[0m  [1m[34mSELECT  "agendas".* FROM "agendas" WHERE "agendas"."id" = ? ORDER BY "agendas"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering /Users/Thiago/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/rails_admin-1.1.1/app/views/rails_admin/main/edit.html.haml within layouts/rails_admin/pjax
+  Rendered /Users/Thiago/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/rails_admin-1.1.1/app/views/rails_admin/main/_form_datetime.html.haml (6.1ms) [cache miss]
+  Rendered /Users/Thiago/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/rails_admin-1.1.1/app/views/rails_admin/main/_submit_buttons.html.haml (7.8ms) [cache miss]
+  Rendered /Users/Thiago/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/rails_admin-1.1.1/app/views/rails_admin/main/edit.html.haml within layouts/rails_admin/pjax (70.2ms)
+Completed 200 OK in 161ms (Views: 128.7ms | ActiveRecord: 1.7ms)
+
+
+Started PUT "/backend/agenda/1/edit" for 127.0.0.1 at 2017-05-22 16:49:01 -0300
+Processing by RailsAdmin::MainController#edit as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"LIInBgdsbdFbuB9+APXWUBtRfO5U+wQFft1bOlyW3yIQQ3bcvDYjBYzvcKy18mtbJ8jEQcjCtHu+WVyKxeAhKQ==", "agenda"=>{"event_date"=>"Maio 22, 2017 16:48"}, "return_to"=>"http://localhost:3000/backend/agenda/1", "_save"=>"", "model_name"=>"agenda", "id"=>"1"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mAgenda Load (0.3ms)[0m  [1m[34mSELECT  "agendas".* FROM "agendas" WHERE "agendas"."id" = ? ORDER BY "agendas"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mcommit transaction[0m
+Redirected to http://localhost:3000/backend/agenda/1
+Completed 302 Found in 24ms (ActiveRecord: 0.8ms)
+
+
+Started GET "/backend/agenda/1" for 127.0.0.1 at 2017-05-22 16:49:01 -0300
+Processing by RailsAdmin::MainController#show as HTML
+  Parameters: {"model_name"=>"agenda", "id"=>"1"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mAgenda Load (0.4ms)[0m  [1m[34mSELECT  "agendas".* FROM "agendas" WHERE "agendas"."id" = ? ORDER BY "agendas"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering /Users/Thiago/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/rails_admin-1.1.1/app/views/rails_admin/main/show.html.haml within layouts/rails_admin/application
+  Rendered /Users/Thiago/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/rails_admin-1.1.1/app/views/rails_admin/main/show.html.haml within layouts/rails_admin/application (4.1ms)
+  Rendered /Users/Thiago/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/rails_admin-1.1.1/app/views/layouts/rails_admin/_secondary_navigation.html.haml (23.6ms) [cache miss]
+  Rendered /Users/Thiago/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/rails_admin-1.1.1/app/views/layouts/rails_admin/_navigation.html.haml (56.2ms) [cache miss]
+  Rendered /Users/Thiago/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/rails_admin-1.1.1/app/views/layouts/rails_admin/_sidebar_navigation.html.haml (20.7ms) [cache miss]
+  Rendering /Users/Thiago/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/rails_admin-1.1.1/app/views/layouts/rails_admin/pjax.html.haml
+  Rendered /Users/Thiago/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/rails_admin-1.1.1/app/views/layouts/rails_admin/pjax.html.haml (21.3ms)
+Completed 200 OK in 2651ms (Views: 2630.5ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/backend/agenda?_pjax=%5Bdata-pjax-container%5D" for 127.0.0.1 at 2017-05-22 16:49:07 -0300
+Processing by RailsAdmin::MainController#index as HTML
+  Parameters: {"_pjax"=>"[data-pjax-container]", "model_name"=>"agenda"}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering /Users/Thiago/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/rails_admin-1.1.1/app/views/rails_admin/main/index.html.haml within layouts/rails_admin/pjax
+  [1m[36mAgenda Load (0.3ms)[0m  [1m[34mSELECT  "agendas".* FROM "agendas" ORDER BY agendas.id desc LIMIT ? OFFSET ?[0m  [["LIMIT", 20], ["OFFSET", 0]]
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT COUNT(*) FROM "agendas"[0m
+  Rendered /Users/Thiago/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/rails_admin-1.1.1/app/views/rails_admin/main/index.html.haml within layouts/rails_admin/pjax (44.7ms)
+Completed 200 OK in 164ms (Views: 116.5ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/backend/agenda/1?_pjax=%5Bdata-pjax-container%5D" for 127.0.0.1 at 2017-05-22 16:49:09 -0300
+Processing by RailsAdmin::MainController#show as HTML
+  Parameters: {"_pjax"=>"[data-pjax-container]", "model_name"=>"agenda", "id"=>"1"}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mAgenda Load (0.4ms)[0m  [1m[34mSELECT  "agendas".* FROM "agendas" WHERE "agendas"."id" = ? ORDER BY "agendas"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering /Users/Thiago/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/rails_admin-1.1.1/app/views/rails_admin/main/show.html.haml within layouts/rails_admin/pjax
+  Rendered /Users/Thiago/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/rails_admin-1.1.1/app/views/rails_admin/main/show.html.haml within layouts/rails_admin/pjax (3.2ms)
+Completed 200 OK in 81ms (Views: 35.4ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/backend/agenda?_pjax=%5Bdata-pjax-container%5D" for 127.0.0.1 at 2017-05-22 16:49:10 -0300
+Processing by RailsAdmin::MainController#index as HTML
+  Parameters: {"_pjax"=>"[data-pjax-container]", "model_name"=>"agenda"}
+  [1m[36mUser Load (5.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering /Users/Thiago/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/rails_admin-1.1.1/app/views/rails_admin/main/index.html.haml within layouts/rails_admin/pjax
+  [1m[36mAgenda Load (0.6ms)[0m  [1m[34mSELECT  "agendas".* FROM "agendas" ORDER BY agendas.id desc LIMIT ? OFFSET ?[0m  [["LIMIT", 20], ["OFFSET", 0]]
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT COUNT(*) FROM "agendas"[0m
+  Rendered /Users/Thiago/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/rails_admin-1.1.1/app/views/rails_admin/main/index.html.haml within layouts/rails_admin/pjax (48.2ms)
+Completed 200 OK in 129ms (Views: 81.5ms | ActiveRecord: 5.9ms)
+
+
+DEPRECATION WARNING: ActionView::Template::Handlers::Erubis is deprecated and will be removed from Rails 5.2. Switch to ActionView::Template::Handlers::ERB::Erubi instead. (called from <top (required)> at /Users/Thiago/Sites/CanoSerrado/config/environment.rb:5)

@@ -1,2 +1,7 @@
-<h1>Pages#a-banda</h1>
-<p>Find me in app/views/pages/a-banda.html.erb</p>
+  <div id="content">
+    <div class="content banda" id="banda">
+      <h2><%= @abanda.title.upcase %></h2>
+      <%= image_tag(@abanda.file) %>
+      <%= @abanda.description.html_safe %>
+    </div>
+  </div>

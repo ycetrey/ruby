@@ -53,6 +53,8 @@ GEM
     bcrypt (3.1.11-x64-mingw32)
     bcrypt (3.1.11-x86-mingw32)
     bindex (0.5.0)
+    bootstrap-wysihtml5-rails (0.3.3.8)
+      railties (>= 3.0)
     builder (3.2.3)
     byebug (9.0.6)
     cancancan (1.16.0)
@@ -255,6 +257,7 @@ PLATFORMS
   x86-mswin32
 
 DEPENDENCIES
+  bootstrap-wysihtml5-rails (> 0.3.1.24)
   byebug
   cancancan
   capybara (~> 2.13)
@@ -263,6 +266,7 @@ DEPENDENCIES
   devise
   erubis
   jbuilder (~> 2.5)
+  jquery-rails
   listen (>= 3.0.5, < 3.2)
   puma (~> 3.7)
   rails (~> 5.1.1)

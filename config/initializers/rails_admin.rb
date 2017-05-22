@@ -16,6 +16,19 @@ RailsAdmin.config do |config|
   end
   config.current_user_method(&:current_user)
 
+  ## == Wysiwyg == 
+  # config.model Abanda do
+  #   edit do
+  #     field :title
+  #     field :file
+  #     field :description, :wysihtml5 do
+  #       config_options toolbar: { fa: true }, # use font-awesome instead of glyphicon
+  #                      html: false, # enables html editor
+  #                      parserRules: { tags: { p:1 } } # support for <p> in html mode
+  #     end
+  #   end
+  # end
+
   ## == Cancan ==
   config.authorize_with :cancan
 
@@ -30,6 +43,7 @@ RailsAdmin.config do |config|
   ## == Gravatar integration ==
   ## To disable Gravatar integration in Navigation Bar set to false
   # config.show_gravatar true
+
 
   config.actions do
     dashboard                     # mandatory

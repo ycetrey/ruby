@@ -11720,3 +11720,4 @@ DEPRECATION WARNING: ActionView::Template::Handlers::Erubis is deprecated and wi
             WHERE name='index_users_on_email' AND type='index'
 [0m
 DEPRECATION WARNING: ActionView::Template::Handlers::Erubis is deprecated and will be removed from Rails 5.2. Switch to ActionView::Template::Handlers::ERB::Erubi instead. (called from <top (required)> at /Users/Thiago/Sites/CanoSerrado/config/environment.rb:5)
+DEPRECATION WARNING: ActionView::Template::Handlers::Erubis is deprecated and will be removed from Rails 5.2. Switch to ActionView::Template::Handlers::ERB::Erubi instead. (called from <top (required)> at /Users/Thiago/Sites/CanoSerrado/config/environment.rb:5)

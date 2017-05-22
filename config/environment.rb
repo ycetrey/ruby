@@ -6,4 +6,4 @@ Rails.application.initialize!
 
 # force Rails into production mode when                          
 # you don't control web/app server and can't set it the proper way                  
-ENV['RAILS_ENV'] ||= 'development'
+ENV['RAILS_ENV'] ||= 'production'

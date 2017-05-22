@@ -1,0 +1,51 @@
+D, [2017-05-22T14:21:35.399773 #6028] DEBUG -- :   [1m[35m (0.2ms)[0m  [1m[35mDROP TABLE IF EXISTS "abandas"[0m
+D, [2017-05-22T14:21:35.400498 #6028] DEBUG -- :   [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+D, [2017-05-22T14:21:35.403839 #6028] DEBUG -- :   [1m[35m (3.0ms)[0m  [1m[35mCREATE TABLE "abandas" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "title" varchar, "description" text, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL, "file" varchar)[0m
+D, [2017-05-22T14:21:35.404727 #6028] DEBUG -- :   [1m[35m (0.2ms)[0m  [1m[35mDROP TABLE IF EXISTS "agendas"[0m
+D, [2017-05-22T14:21:35.406759 #6028] DEBUG -- :   [1m[35m (1.5ms)[0m  [1m[35mCREATE TABLE "agendas" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "title" varchar, "address" varchar, "city" varchar, "event_date" datetime, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL)[0m
+D, [2017-05-22T14:21:35.407680 #6028] DEBUG -- :   [1m[35m (0.2ms)[0m  [1m[35mDROP TABLE IF EXISTS "banners"[0m
+D, [2017-05-22T14:21:35.409797 #6028] DEBUG -- :   [1m[35m (1.7ms)[0m  [1m[35mCREATE TABLE "banners" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar, "file" varchar, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL)[0m
+D, [2017-05-22T14:21:35.410656 #6028] DEBUG -- :   [1m[35m (0.2ms)[0m  [1m[35mDROP TABLE IF EXISTS "discografias"[0m
+D, [2017-05-22T14:21:35.412856 #6028] DEBUG -- :   [1m[35m (1.8ms)[0m  [1m[35mCREATE TABLE "discografias" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "title" varchar, "folder" varchar, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL)[0m
+D, [2017-05-22T14:21:35.413861 #6028] DEBUG -- :   [1m[35m (0.2ms)[0m  [1m[35mDROP TABLE IF EXISTS "mp3s"[0m
+D, [2017-05-22T14:21:35.416396 #6028] DEBUG -- :   [1m[35m (1.9ms)[0m  [1m[35mCREATE TABLE "mp3s" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "title" varchar, "discografia_id" integer, "file" varchar, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL)[0m
+D, [2017-05-22T14:21:35.429217 #6028] DEBUG -- :   [1m[35m (1.7ms)[0m  [1m[35mCREATE  INDEX "index_mp3s_on_discografia_id" ON "mp3s" ("discografia_id")[0m
+D, [2017-05-22T14:21:35.430224 #6028] DEBUG -- :   [1m[35m (0.2ms)[0m  [1m[35mDROP TABLE IF EXISTS "photos"[0m
+D, [2017-05-22T14:21:35.432698 #6028] DEBUG -- :   [1m[35m (2.0ms)[0m  [1m[35mCREATE TABLE "photos" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "legend" varchar, "address" varchar, "date" datetime, "event_name" varchar, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL)[0m
+D, [2017-05-22T14:21:35.434120 #6028] DEBUG -- :   [1m[35m (0.2ms)[0m  [1m[35mDROP TABLE IF EXISTS "users"[0m
+D, [2017-05-22T14:21:35.437308 #6028] DEBUG -- :   [1m[35m (1.7ms)[0m  [1m[35mCREATE TABLE "users" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar, "password" varchar, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL, "email" varchar DEFAULT '' NOT NULL, "encrypted_password" varchar DEFAULT '' NOT NULL, "reset_password_token" varchar, "reset_password_sent_at" datetime, "remember_created_at" datetime, "sign_in_count" integer DEFAULT 0 NOT NULL, "current_sign_in_at" datetime, "last_sign_in_at" datetime, "current_sign_in_ip" varchar, "last_sign_in_ip" varchar)[0m
+D, [2017-05-22T14:21:35.457019 #6028] DEBUG -- :   [1m[35m (18.8ms)[0m  [1m[35mCREATE UNIQUE INDEX "index_users_on_email" ON "users" ("email")[0m
+D, [2017-05-22T14:21:35.459033 #6028] DEBUG -- :   [1m[35m (0.7ms)[0m  [1m[34m            SELECT sql
+            FROM sqlite_master
+            WHERE name='index_users_on_email' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_users_on_email' AND type='index'
+[0m
+D, [2017-05-22T14:21:35.461710 #6028] DEBUG -- :   [1m[35m (2.1ms)[0m  [1m[35mCREATE UNIQUE INDEX "index_users_on_reset_password_token" ON "users" ("reset_password_token")[0m
+D, [2017-05-22T14:21:35.465854 #6028] DEBUG -- :   [1m[35m (0.4ms)[0m  [1m[35mDROP TABLE IF EXISTS "videos"[0m
+D, [2017-05-22T14:21:35.471053 #6028] DEBUG -- :   [1m[35m (4.4ms)[0m  [1m[35mCREATE TABLE "videos" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "title" varchar, "address" varchar, "url" varchar, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL)[0m
+D, [2017-05-22T14:21:35.476473 #6028] DEBUG -- :   [1m[35m (2.4ms)[0m  [1m[35mCREATE TABLE "schema_migrations" ("version" varchar NOT NULL PRIMARY KEY)[0m
+D, [2017-05-22T14:21:35.525939 #6028] DEBUG -- :   [1m[35m (0.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+D, [2017-05-22T14:21:35.528555 #6028] DEBUG -- :   [1m[35m (1.9ms)[0m  [1m[32mINSERT INTO "schema_migrations" (version) VALUES (20170522140452)[0m
+D, [2017-05-22T14:21:35.530670 #6028] DEBUG -- :   [1m[35m (1.7ms)[0m  [1m[32mINSERT INTO "schema_migrations" (version) VALUES
+(20170516195144),
+(20170516195224),
+(20170517125757),
+(20170517134354),
+(20170517135550),
+(20170517175528),
+(20170517175912),
+(20170517180111),
+(20170522131512);
+
+[0m
+D, [2017-05-22T14:21:35.590552 #6028] DEBUG -- :   [1m[35m (9.0ms)[0m  [1m[35mCREATE TABLE "ar_internal_metadata" ("key" varchar NOT NULL PRIMARY KEY, "value" varchar, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL)[0m
+D, [2017-05-22T14:21:35.593919 #6028] DEBUG -- :   [1m[36mActiveRecord::InternalMetadata Load (0.3ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+D, [2017-05-22T14:21:35.603210 #6028] DEBUG -- :   [1m[35m (0.2ms)[0m  [1m[36mbegin transaction[0m
+D, [2017-05-22T14:21:35.685869 #6028] DEBUG -- :   [1m[35mSQL (68.3ms)[0m  [1m[32mINSERT INTO "ar_internal_metadata" ("key", "value", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["key", "environment"], ["value", "production"], ["created_at", "2017-05-22 17:21:35.616104"], ["updated_at", "2017-05-22 17:21:35.616104"]]
+D, [2017-05-22T14:21:35.725342 #6028] DEBUG -- :   [1m[35m (39.0ms)[0m  [1m[36mcommit transaction[0m
+D, [2017-05-22T14:21:35.726923 #6028] DEBUG -- :   [1m[36mActiveRecord::InternalMetadata Load (0.2ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+D, [2017-05-22T14:21:35.739153 #6028] DEBUG -- :   [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+D, [2017-05-22T14:21:35.748600 #6028] DEBUG -- :   [1m[35m (0.1ms)[0m  [1m[36mcommit transaction[0m

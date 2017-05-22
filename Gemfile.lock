@@ -1,5 +1,5 @@
 GIT
-  remote: git@github.com:ycetrey/rails_admin_theme.git
+  remote: https://github.com/ycetrey/rails_admin_theme.git
   revision: 5698d4f71c29d285911c02f40c916076378ad205
   specs:
     rails_admin_rollincode (1.2.1)

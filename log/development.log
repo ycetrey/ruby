@@ -10503,3 +10503,1220 @@ puma (3.8.2) lib/puma/server.rb:600:in `handle_request'
 puma (3.8.2) lib/puma/server.rb:435:in `process_client'
 puma (3.8.2) lib/puma/server.rb:299:in `block in run'
 puma (3.8.2) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+DEPRECATION WARNING: ActionView::Template::Handlers::Erubis is deprecated and will be removed from Rails 5.2. Switch to ActionView::Template::Handlers::ERB::Erubi instead. (called from <top (required)> at /Users/Thiago/Sites/CanoSerrado/config/environment.rb:5)
+DEPRECATION WARNING: ActionView::Template::Handlers::Erubis is deprecated and will be removed from Rails 5.2. Switch to ActionView::Template::Handlers::ERB::Erubi instead. (called from <top (required)> at /Users/Thiago/Sites/CanoSerrado/config/environment.rb:5)
+DEPRECATION WARNING: ActionView::Template::Handlers::Erubis is deprecated and will be removed from Rails 5.2. Switch to ActionView::Template::Handlers::ERB::Erubi instead. (called from <top (required)> at /Users/Thiago/Sites/CanoSerrado/config/environment.rb:5)
+DEPRECATION WARNING: ActionView::Template::Handlers::Erubis is deprecated and will be removed from Rails 5.2. Switch to ActionView::Template::Handlers::ERB::Erubi instead. (called from <top (required)> at /Users/Thiago/Sites/CanoSerrado/config/environment.rb:5)
+DEPRECATION WARNING: ActionView::Template::Handlers::Erubis is deprecated and will be removed from Rails 5.2. Switch to ActionView::Template::Handlers::ERB::Erubi instead. (called from <top (required)> at /Users/Thiago/Sites/CanoSerrado/config/environment.rb:5)
+DEPRECATION WARNING: ActionView::Template::Handlers::Erubis is deprecated and will be removed from Rails 5.2. Switch to ActionView::Template::Handlers::ERB::Erubi instead. (called from <top (required)> at /Users/Thiago/Sites/CanoSerrado/config/environment.rb:5)
+DEPRECATION WARNING: ActionView::Template::Handlers::Erubis is deprecated and will be removed from Rails 5.2. Switch to ActionView::Template::Handlers::ERB::Erubi instead. (called from <top (required)> at /Users/Thiago/Sites/CanoSerrado/config/environment.rb:5)
+Started GET "/backend/abanda" for 127.0.0.1 at 2017-05-22 13:59:46 -0300
+  
+ActiveRecord::StatementInvalid (SQLite3::NotADatabaseException: file is encrypted or is not a database: SELECT name FROM sqlite_master WHERE name <> 'sqlite_sequence' AND name = 'schema_migrations' AND type IN ('table')):
+  
+sqlite3 (1.3.13) lib/sqlite3/database.rb:91:in `initialize'
+sqlite3 (1.3.13) lib/sqlite3/database.rb:91:in `new'
+sqlite3 (1.3.13) lib/sqlite3/database.rb:91:in `prepare'
+activerecord (5.1.1) lib/active_record/connection_adapters/sqlite3_adapter.rb:212:in `block (2 levels) in exec_query'
+activesupport (5.1.1) lib/active_support/dependencies/interlock.rb:46:in `block in permit_concurrent_loads'
+activesupport (5.1.1) lib/active_support/concurrency/share_lock.rb:185:in `yield_shares'
+activesupport (5.1.1) lib/active_support/dependencies/interlock.rb:45:in `permit_concurrent_loads'
+activerecord (5.1.1) lib/active_record/connection_adapters/sqlite3_adapter.rb:209:in `block in exec_query'
+activerecord (5.1.1) lib/active_record/connection_adapters/abstract_adapter.rb:612:in `block (2 levels) in log'
+/Users/Thiago/.rbenv/versions/2.4.0/lib/ruby/2.4.0/monitor.rb:214:in `mon_synchronize'
+activerecord (5.1.1) lib/active_record/connection_adapters/abstract_adapter.rb:611:in `block in log'
+activesupport (5.1.1) lib/active_support/notifications/instrumenter.rb:21:in `instrument'
+activerecord (5.1.1) lib/active_record/connection_adapters/abstract_adapter.rb:603:in `log'
+activerecord (5.1.1) lib/active_record/connection_adapters/sqlite3_adapter.rb:208:in `exec_query'
+activerecord (5.1.1) lib/active_record/connection_adapters/abstract/database_statements.rb:361:in `select'
+activerecord (5.1.1) lib/active_record/connection_adapters/abstract/database_statements.rb:42:in `select_all'
+activerecord (5.1.1) lib/active_record/connection_adapters/abstract/query_cache.rb:95:in `block in select_all'
+activerecord (5.1.1) lib/active_record/connection_adapters/abstract/query_cache.rb:117:in `block in cache_sql'
+/Users/Thiago/.rbenv/versions/2.4.0/lib/ruby/2.4.0/monitor.rb:214:in `mon_synchronize'
+activerecord (5.1.1) lib/active_record/connection_adapters/abstract/query_cache.rb:104:in `cache_sql'
+activerecord (5.1.1) lib/active_record/connection_adapters/abstract/query_cache.rb:95:in `select_all'
+activerecord (5.1.1) lib/active_record/connection_adapters/abstract/database_statements.rb:68:in `select_rows'
+activerecord (5.1.1) lib/active_record/connection_adapters/abstract/database_statements.rb:62:in `select_values'
+activerecord (5.1.1) lib/active_record/connection_adapters/abstract/schema_statements.rb:59:in `table_exists?'
+activerecord (5.1.1) lib/active_record/schema_migration.rb:20:in `table_exists?'
+activerecord (5.1.1) lib/active_record/migration.rb:1031:in `get_all_versions'
+activerecord (5.1.1) lib/active_record/migration.rb:1043:in `needs_migration?'
+activerecord (5.1.1) lib/active_record/migration.rb:576:in `check_pending!'
+activerecord (5.1.1) lib/active_record/migration.rb:553:in `call'
+actionpack (5.1.1) lib/action_dispatch/middleware/callbacks.rb:26:in `block in call'
+activesupport (5.1.1) lib/active_support/callbacks.rb:97:in `run_callbacks'
+actionpack (5.1.1) lib/action_dispatch/middleware/callbacks.rb:24:in `call'
+actionpack (5.1.1) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.1) lib/action_dispatch/middleware/debug_exceptions.rb:59:in `call'
+web-console (3.5.1) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.5.1) lib/web_console/middleware.rb:28:in `block in call'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `catch'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `call'
+actionpack (5.1.1) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.1.1) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.1.1) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.1.1) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.1.1) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.1.1) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.1.1) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.0) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.1.1) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.1.1) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+rack (2.0.3) lib/rack/method_override.rb:22:in `call'
+rack (2.0.3) lib/rack/runtime.rb:22:in `call'
+activesupport (5.1.1) lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+actionpack (5.1.1) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.1) lib/action_dispatch/middleware/static.rb:125:in `call'
+rack (2.0.3) lib/rack/sendfile.rb:111:in `call'
+railties (5.1.1) lib/rails/engine.rb:522:in `call'
+puma (3.8.2) lib/puma/configuration.rb:224:in `call'
+puma (3.8.2) lib/puma/server.rb:600:in `handle_request'
+puma (3.8.2) lib/puma/server.rb:435:in `process_client'
+puma (3.8.2) lib/puma/server.rb:299:in `block in run'
+puma (3.8.2) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+Started GET "/" for 127.0.0.1 at 2017-05-22 14:04:10 -0300
+  
+ActiveRecord::StatementInvalid (SQLite3::NotADatabaseException: file is encrypted or is not a database: SELECT name FROM sqlite_master WHERE name <> 'sqlite_sequence' AND name = 'schema_migrations' AND type IN ('table')):
+  
+sqlite3 (1.3.13) lib/sqlite3/database.rb:91:in `initialize'
+sqlite3 (1.3.13) lib/sqlite3/database.rb:91:in `new'
+sqlite3 (1.3.13) lib/sqlite3/database.rb:91:in `prepare'
+activerecord (5.1.1) lib/active_record/connection_adapters/sqlite3_adapter.rb:212:in `block (2 levels) in exec_query'
+activesupport (5.1.1) lib/active_support/dependencies/interlock.rb:46:in `block in permit_concurrent_loads'
+activesupport (5.1.1) lib/active_support/concurrency/share_lock.rb:185:in `yield_shares'
+activesupport (5.1.1) lib/active_support/dependencies/interlock.rb:45:in `permit_concurrent_loads'
+activerecord (5.1.1) lib/active_record/connection_adapters/sqlite3_adapter.rb:209:in `block in exec_query'
+activerecord (5.1.1) lib/active_record/connection_adapters/abstract_adapter.rb:612:in `block (2 levels) in log'
+/Users/Thiago/.rbenv/versions/2.4.0/lib/ruby/2.4.0/monitor.rb:214:in `mon_synchronize'
+activerecord (5.1.1) lib/active_record/connection_adapters/abstract_adapter.rb:611:in `block in log'
+activesupport (5.1.1) lib/active_support/notifications/instrumenter.rb:21:in `instrument'
+activerecord (5.1.1) lib/active_record/connection_adapters/abstract_adapter.rb:603:in `log'
+activerecord (5.1.1) lib/active_record/connection_adapters/sqlite3_adapter.rb:208:in `exec_query'
+activerecord (5.1.1) lib/active_record/connection_adapters/abstract/database_statements.rb:361:in `select'
+activerecord (5.1.1) lib/active_record/connection_adapters/abstract/database_statements.rb:42:in `select_all'
+activerecord (5.1.1) lib/active_record/connection_adapters/abstract/query_cache.rb:95:in `block in select_all'
+activerecord (5.1.1) lib/active_record/connection_adapters/abstract/query_cache.rb:117:in `block in cache_sql'
+/Users/Thiago/.rbenv/versions/2.4.0/lib/ruby/2.4.0/monitor.rb:214:in `mon_synchronize'
+activerecord (5.1.1) lib/active_record/connection_adapters/abstract/query_cache.rb:104:in `cache_sql'
+activerecord (5.1.1) lib/active_record/connection_adapters/abstract/query_cache.rb:95:in `select_all'
+activerecord (5.1.1) lib/active_record/connection_adapters/abstract/database_statements.rb:68:in `select_rows'
+activerecord (5.1.1) lib/active_record/connection_adapters/abstract/database_statements.rb:62:in `select_values'
+activerecord (5.1.1) lib/active_record/connection_adapters/abstract/schema_statements.rb:59:in `table_exists?'
+activerecord (5.1.1) lib/active_record/schema_migration.rb:20:in `table_exists?'
+activerecord (5.1.1) lib/active_record/migration.rb:1031:in `get_all_versions'
+activerecord (5.1.1) lib/active_record/migration.rb:1043:in `needs_migration?'
+activerecord (5.1.1) lib/active_record/migration.rb:576:in `check_pending!'
+activerecord (5.1.1) lib/active_record/migration.rb:553:in `call'
+actionpack (5.1.1) lib/action_dispatch/middleware/callbacks.rb:26:in `block in call'
+activesupport (5.1.1) lib/active_support/callbacks.rb:97:in `run_callbacks'
+actionpack (5.1.1) lib/action_dispatch/middleware/callbacks.rb:24:in `call'
+actionpack (5.1.1) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.1) lib/action_dispatch/middleware/debug_exceptions.rb:59:in `call'
+web-console (3.5.1) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.5.1) lib/web_console/middleware.rb:28:in `block in call'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `catch'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `call'
+actionpack (5.1.1) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.1.1) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.1.1) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.1.1) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.1.1) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.1.1) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.1.1) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.0) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.1.1) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.1.1) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+rack (2.0.3) lib/rack/method_override.rb:22:in `call'
+rack (2.0.3) lib/rack/runtime.rb:22:in `call'
+activesupport (5.1.1) lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+actionpack (5.1.1) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.1) lib/action_dispatch/middleware/static.rb:125:in `call'
+rack (2.0.3) lib/rack/sendfile.rb:111:in `call'
+railties (5.1.1) lib/rails/engine.rb:522:in `call'
+puma (3.8.2) lib/puma/configuration.rb:224:in `call'
+puma (3.8.2) lib/puma/server.rb:600:in `handle_request'
+puma (3.8.2) lib/puma/server.rb:435:in `process_client'
+puma (3.8.2) lib/puma/server.rb:299:in `block in run'
+puma (3.8.2) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+DEPRECATION WARNING: ActionView::Template::Handlers::Erubis is deprecated and will be removed from Rails 5.2. Switch to ActionView::Template::Handlers::ERB::Erubi instead. (called from <top (required)> at /Users/Thiago/Sites/CanoSerrado/config/environment.rb:5)
+DEPRECATION WARNING: ActionView::Template::Handlers::Erubis is deprecated and will be removed from Rails 5.2. Switch to ActionView::Template::Handlers::ERB::Erubi instead. (called from <top (required)> at /Users/Thiago/Sites/CanoSerrado/config/environment.rb:5)
+  [1m[35m (15.3ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (8.9ms)[0m  [1m[35mCREATE TABLE "schema_migrations" ("version" varchar NOT NULL PRIMARY KEY)[0m
+  [1m[35m (2.7ms)[0m  [1m[35mCREATE TABLE "ar_internal_metadata" ("key" varchar NOT NULL PRIMARY KEY, "value" varchar, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL)[0m
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Migrating to CreateUsers (20170516195144)
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.8ms)[0m  [1m[35mCREATE TABLE "users" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar, "password" varchar, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL)[0m
+  [1m[35mSQL (0.4ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20170516195144"]]
+  [1m[35m (2.6ms)[0m  [1m[36mcommit transaction[0m
+Migrating to CreateBanners (20170516195224)
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.6ms)[0m  [1m[35mCREATE TABLE "banners" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar, "file" varchar, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL)[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20170516195224"]]
+  [1m[35m (2.2ms)[0m  [1m[36mcommit transaction[0m
+Migrating to AddDeviseToUsers (20170517125757)
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (7.7ms)[0m  [1m[35mALTER TABLE "users" ADD "email" varchar DEFAULT '' NOT NULL[0m
+  [1m[35m (51.1ms)[0m  [1m[35mALTER TABLE "users" ADD "encrypted_password" varchar DEFAULT '' NOT NULL[0m
+  [1m[35m (0.4ms)[0m  [1m[35mALTER TABLE "users" ADD "reset_password_token" varchar[0m
+  [1m[35m (0.3ms)[0m  [1m[35mALTER TABLE "users" ADD "reset_password_sent_at" datetime[0m
+  [1m[35m (0.2ms)[0m  [1m[35mALTER TABLE "users" ADD "remember_created_at" datetime[0m
+  [1m[35m (0.4ms)[0m  [1m[35mALTER TABLE "users" ADD "sign_in_count" integer DEFAULT 0 NOT NULL[0m
+  [1m[35m (0.3ms)[0m  [1m[35mALTER TABLE "users" ADD "current_sign_in_at" datetime[0m
+  [1m[35m (0.4ms)[0m  [1m[35mALTER TABLE "users" ADD "last_sign_in_at" datetime[0m
+  [1m[35m (4.0ms)[0m  [1m[35mALTER TABLE "users" ADD "current_sign_in_ip" varchar[0m
+  [1m[35m (0.3ms)[0m  [1m[35mALTER TABLE "users" ADD "last_sign_in_ip" varchar[0m
+  [1m[35m (1.1ms)[0m  [1m[35mCREATE UNIQUE INDEX "index_users_on_email" ON "users" ("email")[0m
+  [1m[35m (0.1ms)[0m  [1m[34m            SELECT sql
+            FROM sqlite_master
+            WHERE name='index_users_on_email' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_users_on_email' AND type='index'
+[0m
+  [1m[35m (0.5ms)[0m  [1m[35mCREATE UNIQUE INDEX "index_users_on_reset_password_token" ON "users" ("reset_password_token")[0m
+  [1m[35mSQL (0.6ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20170517125757"]]
+  [1m[35m (21.6ms)[0m  [1m[36mcommit transaction[0m
+Migrating to CreateDiscografias (20170517134354)
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (1.0ms)[0m  [1m[35mCREATE TABLE "discografias" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "title" varchar, "folder" varchar, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL)[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20170517134354"]]
+  [1m[35m (17.1ms)[0m  [1m[36mcommit transaction[0m
+Migrating to CreateMp3s (20170517135550)
+  [1m[35m (0.7ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (1.1ms)[0m  [1m[35mCREATE TABLE "mp3s" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "title" varchar, "discografia_id" integer, "file" varchar, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL, CONSTRAINT "fk_rails_aec3cb406f"
+FOREIGN KEY ("discografia_id")
+  REFERENCES "discografias" ("id")
+)[0m
+  [1m[35m (0.2ms)[0m  [1m[35mCREATE  INDEX "index_mp3s_on_discografia_id" ON "mp3s" ("discografia_id")[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20170517135550"]]
+  [1m[35m (50.4ms)[0m  [1m[36mcommit transaction[0m
+Migrating to CreateAgendas (20170517175528)
+  [1m[35m (0.2ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (1.2ms)[0m  [1m[35mCREATE TABLE "agendas" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "title" varchar, "address" varchar, "city" varchar, "event_date" datetime, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL)[0m
+  [1m[35mSQL (0.4ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20170517175528"]]
+  [1m[35m (1.8ms)[0m  [1m[36mcommit transaction[0m
+Migrating to CreatePhotos (20170517175912)
+  [1m[35m (0.2ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (1.1ms)[0m  [1m[35mCREATE TABLE "photos" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "legend" varchar, "address" varchar, "date" datetime, "event_name" varchar, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL)[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20170517175912"]]
+  [1m[35m (40.4ms)[0m  [1m[36mcommit transaction[0m
+Migrating to CreateVideos (20170517180111)
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.5ms)[0m  [1m[35mCREATE TABLE "videos" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "title" varchar, "address" varchar, "url" varchar, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL)[0m
+  [1m[35mSQL (10.6ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20170517180111"]]
+  [1m[35m (19.9ms)[0m  [1m[36mcommit transaction[0m
+Migrating to CreateAbandas (20170522131512)
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.7ms)[0m  [1m[35mCREATE TABLE "abandas" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "title" varchar, "description" text, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL)[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20170522131512"]]
+  [1m[35m (33.3ms)[0m  [1m[36mcommit transaction[0m
+Migrating to AddFileToAbanda (20170522140452)
+  [1m[35m (0.2ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.6ms)[0m  [1m[35mALTER TABLE "abandas" ADD "file" varchar[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20170522140452"]]
+  [1m[35m (1.1ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.3ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[35m (0.6ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.6ms)[0m  [1m[32mINSERT INTO "ar_internal_metadata" ("key", "value", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["key", "environment"], ["value", "development"], ["created_at", "2017-05-22 17:05:34.528215"], ["updated_at", "2017-05-22 17:05:34.528215"]]
+  [1m[35m (1.6ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.1ms)[0m  [1m[34m            SELECT sql
+            FROM sqlite_master
+            WHERE name='index_mp3s_on_discografia_id' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_mp3s_on_discografia_id' AND type='index'
+[0m
+  [1m[35m (0.1ms)[0m  [1m[34m            SELECT sql
+            FROM sqlite_master
+            WHERE name='index_users_on_reset_password_token' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_users_on_reset_password_token' AND type='index'
+[0m
+  [1m[35m (0.2ms)[0m  [1m[34m            SELECT sql
+            FROM sqlite_master
+            WHERE name='index_users_on_email' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_users_on_email' AND type='index'
+[0m
+DEPRECATION WARNING: ActionView::Template::Handlers::Erubis is deprecated and will be removed from Rails 5.2. Switch to ActionView::Template::Handlers::ERB::Erubi instead. (called from <top (required)> at /Users/Thiago/Sites/CanoSerrado/config/environment.rb:5)
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mUser Exists (9.3ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "admin@canoserrado.com.br"], ["LIMIT", 1]]
+  [1m[35mSQL (1.9ms)[0m  [1m[32mINSERT INTO "users" ("name", "created_at", "updated_at", "email", "encrypted_password") VALUES (?, ?, ?, ?, ?)[0m  [["name", "Cano Serrado"], ["created_at", "2017-05-22 17:05:56.389963"], ["updated_at", "2017-05-22 17:05:56.389963"], ["email", "admin@canoserrado.com.br"], ["encrypted_password", "$2a$11$hIf1XFXOrFJBxF40iTxs2eJcdTljcqsL6vB9lg3YdCQD7RUUXDsvW"]]
+  [1m[35m (2.2ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (4.7ms)[0m  [1m[32mINSERT INTO "abandas" ("title", "description", "created_at", "updated_at", "file") VALUES (?, ?, ?, ?, ?)[0m  [["title", "A Banda"], ["description", "<p class=\"code\">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras imperdiet turpis neque, ut interdum eros. Nulla at libero a justo ultricies ullamcorper. Ut consectetur a dolor aliquam maximus. Quisque at risus sed tortor dapibus fermentum. Mauris commodo rutrum purus vel egestas.</p><p class=\"code\"><br>Vestibulum et urna vitae nibh condimentum tempus a at nibh. Fusce efficitur, felis in eleifend dignissim, lorem posuere ex, ac condimentum odio ex a magna. Duis non dapibus lectus. Pellentesque dignissim bibendum diam in varius. In feugiat mauris posuere consequat efficitur. Aenean tempus malesuada libero vel tristique.</p>"], ["created_at", "2017-05-22 17:05:56.459772"], ["updated_at", "2017-05-22 17:05:56.459772"], ["file", nil]]
+  [1m[35m (1.8ms)[0m  [1m[36mcommit transaction[0m
+Started GET "/" for 127.0.0.1 at 2017-05-22 14:06:00 -0300
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by PagesController#home as HTML
+  [1m[36mAbanda Load (0.3ms)[0m  [1m[34mSELECT  "abandas".* FROM "abandas" WHERE "abandas"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/_banner.html.erb (3459.5ms) [cache miss]
+  Rendered pages/_abanda.html.erb (1.1ms) [cache miss]
+  Rendered pages/_agenda.html.erb (0.7ms) [cache miss]
+  Rendered pages/_discografia.html.erb (0.6ms) [cache miss]
+  Rendered pages/_fotos.html.erb (0.4ms) [cache miss]
+  Rendered pages/_videos.html.erb (0.4ms) [cache miss]
+  Rendered pages/_parceiros.html.erb (0.7ms) [cache miss]
+  Rendered pages/_contato.html.erb (0.6ms) [cache miss]
+  Rendered pages/home.html.erb within layouts/application (3544.6ms)
+  [1m[36mBanner Load (12.3ms)[0m  [1m[34mSELECT  "banners".* FROM "banners" ORDER BY "banners"."id" ASC LIMIT ?[0m  [["LIMIT", 1]]
+Completed 500 Internal Server Error in 3878ms (ActiveRecord: 14.5ms)
+
+
+  
+ActionView::Template::Error (undefined method `file' for nil:NilClass):
+    11:     <link href='https://fonts.googleapis.com/css?family=Source+Code+Pro:400,300' rel='stylesheet' type='text/css'>
+    12:   </head>
+    13: 
+    14:   <body style="background: url(<%= @banner.first.file %>) #080808 fixed center top no-repeat;"">
+    15:     <%= yield %>
+    16:   </body>
+    17: </html>
+  
+app/views/layouts/application.html.erb:14:in `_app_views_layouts_application_html_erb___1354903426441798309_70289722485560'
+Started GET "/backend/abanda" for 127.0.0.1 at 2017-05-22 14:06:21 -0300
+Processing by RailsAdmin::MainController#index as HTML
+  Parameters: {"model_name"=>"abanda"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+Completed 401 Unauthorized in 39ms (ActiveRecord: 1.6ms)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2017-05-22 14:06:21 -0300
+Processing by Devise::SessionsController#new as HTML
+  Rendering /Users/Thiago/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/devise-4.3.0/app/views/devise/sessions/new.html.erb within layouts/application
+  Rendered /Users/Thiago/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/devise-4.3.0/app/views/devise/shared/_links.html.erb (2.8ms) [cache miss]
+  Rendered /Users/Thiago/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/devise-4.3.0/app/views/devise/sessions/new.html.erb within layouts/application (82.0ms)
+Completed 500 Internal Server Error in 209ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (undefined method `first' for nil:NilClass):
+    11:     <link href='https://fonts.googleapis.com/css?family=Source+Code+Pro:400,300' rel='stylesheet' type='text/css'>
+    12:   </head>
+    13: 
+    14:   <body style="background: url(<%= @banner.first.file %>) #080808 fixed center top no-repeat;"">
+    15:     <%= yield %>
+    16:   </body>
+    17: </html>
+  
+app/views/layouts/application.html.erb:14:in `_app_views_layouts_application_html_erb___1354903426441798309_70289738716600'
+Started GET "/users/sign_in" for 127.0.0.1 at 2017-05-22 14:06:32 -0300
+Processing by Devise::SessionsController#new as HTML
+  Rendering /Users/Thiago/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/devise-4.3.0/app/views/devise/sessions/new.html.erb within layouts/application
+  Rendered /Users/Thiago/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/devise-4.3.0/app/views/devise/shared/_links.html.erb (2.0ms) [cache miss]
+  Rendered /Users/Thiago/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/devise-4.3.0/app/views/devise/sessions/new.html.erb within layouts/application (26.6ms)
+Completed 500 Internal Server Error in 173ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (undefined method `first' for nil:NilClass):
+    11:     <link href='https://fonts.googleapis.com/css?family=Source+Code+Pro:400,300' rel='stylesheet' type='text/css'>
+    12:   </head>
+    13: 
+    14:   <body style="background: url(<%= @banner.first.file %>) #080808 fixed center top no-repeat;"">
+    15:     <%= yield %>
+    16:   </body>
+    17: </html>
+  
+app/views/layouts/application.html.erb:14:in `_app_views_layouts_application_html_erb___1354903426441798309_70289745218660'
+Started GET "/" for 127.0.0.1 at 2017-05-22 14:06:36 -0300
+Processing by PagesController#home as HTML
+  [1m[36mAbanda Load (0.3ms)[0m  [1m[34mSELECT  "abandas".* FROM "abandas" WHERE "abandas"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/_banner.html.erb (56.3ms) [cache miss]
+  Rendered pages/_abanda.html.erb (3.9ms) [cache miss]
+  Rendered pages/_agenda.html.erb (0.7ms) [cache miss]
+  Rendered pages/_discografia.html.erb (0.7ms) [cache miss]
+  Rendered pages/_fotos.html.erb (1.0ms) [cache miss]
+  Rendered pages/_videos.html.erb (0.7ms) [cache miss]
+  Rendered pages/_parceiros.html.erb (0.6ms) [cache miss]
+  Rendered pages/_contato.html.erb (0.5ms) [cache miss]
+  Rendered pages/home.html.erb within layouts/application (225.5ms)
+  [1m[36mBanner Load (0.3ms)[0m  [1m[34mSELECT  "banners".* FROM "banners" ORDER BY "banners"."id" ASC LIMIT ?[0m  [["LIMIT", 1]]
+Completed 500 Internal Server Error in 434ms (ActiveRecord: 0.6ms)
+
+
+  
+ActionView::Template::Error (undefined method `file' for nil:NilClass):
+    11:     <link href='https://fonts.googleapis.com/css?family=Source+Code+Pro:400,300' rel='stylesheet' type='text/css'>
+    12:   </head>
+    13: 
+    14:   <body style="background: url(<%= @banner.first.file %>) #080808 fixed center top no-repeat;"">
+    15:     <%= yield %>
+    16:   </body>
+    17: </html>
+  
+app/views/layouts/application.html.erb:14:in `_app_views_layouts_application_html_erb___1354903426441798309_70289744727480'
+DEPRECATION WARNING: ActionView::Template::Handlers::Erubis is deprecated and will be removed from Rails 5.2. Switch to ActionView::Template::Handlers::ERB::Erubi instead. (called from <top (required)> at /Users/Thiago/Sites/CanoSerrado/config/environment.rb:5)
+DEPRECATION WARNING: ActionView::Template::Handlers::Erubis is deprecated and will be removed from Rails 5.2. Switch to ActionView::Template::Handlers::ERB::Erubi instead. (called from <top (required)> at /Users/Thiago/Sites/CanoSerrado/config/environment.rb:5)
+Started GET "/" for 127.0.0.1 at 2017-05-22 14:07:06 -0300
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by PagesController#home as HTML
+  [1m[36mAbanda Load (13.9ms)[0m  [1m[34mSELECT  "abandas".* FROM "abandas" WHERE "abandas"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/_banner.html.erb (2166.8ms) [cache miss]
+  Rendered pages/_abanda.html.erb (8.5ms) [cache miss]
+  Rendered pages/_agenda.html.erb (0.7ms) [cache miss]
+  Rendered pages/_discografia.html.erb (0.7ms) [cache miss]
+  Rendered pages/_fotos.html.erb (0.6ms) [cache miss]
+  Rendered pages/_videos.html.erb (0.6ms) [cache miss]
+  Rendered pages/_parceiros.html.erb (0.5ms) [cache miss]
+  Rendered pages/_contato.html.erb (0.7ms) [cache miss]
+  Rendered pages/home.html.erb within layouts/application (2313.0ms)
+  [1m[36mBanner Load (7.7ms)[0m  [1m[34mSELECT  "banners".* FROM "banners" ORDER BY "banners"."id" ASC LIMIT ?[0m  [["LIMIT", 1]]
+Completed 500 Internal Server Error in 2648ms (ActiveRecord: 24.0ms)
+
+
+  
+ActionView::Template::Error (undefined method `file' for nil:NilClass):
+    11:     <link href='https://fonts.googleapis.com/css?family=Source+Code+Pro:400,300' rel='stylesheet' type='text/css'>
+    12:   </head>
+    13: 
+    14:   <body style="background: url(<%= @banner.first.file %>) #080808 fixed center top no-repeat;"">
+    15:     <%= yield %>
+    16:   </body>
+    17: </html>
+  
+app/views/layouts/application.html.erb:14:in `_app_views_layouts_application_html_erb___1036634963680399158_70320943094680'
+Started GET "/users/sign_in" for 127.0.0.1 at 2017-05-22 14:07:14 -0300
+Processing by Devise::SessionsController#new as HTML
+  Rendering /Users/Thiago/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/devise-4.3.0/app/views/devise/sessions/new.html.erb within layouts/application
+  Rendered /Users/Thiago/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/devise-4.3.0/app/views/devise/shared/_links.html.erb (2.1ms) [cache miss]
+  Rendered /Users/Thiago/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/devise-4.3.0/app/views/devise/sessions/new.html.erb within layouts/application (210.5ms)
+Completed 500 Internal Server Error in 408ms (ActiveRecord: 1.3ms)
+
+
+  
+ActionView::Template::Error (undefined method `first' for nil:NilClass):
+    11:     <link href='https://fonts.googleapis.com/css?family=Source+Code+Pro:400,300' rel='stylesheet' type='text/css'>
+    12:   </head>
+    13: 
+    14:   <body style="background: url(<%= @banner.first.file %>) #080808 fixed center top no-repeat;"">
+    15:     <%= yield %>
+    16:   </body>
+    17: </html>
+  
+app/views/layouts/application.html.erb:14:in `_app_views_layouts_application_html_erb___1036634963680399158_70320989079600'
+Started GET "/" for 127.0.0.1 at 2017-05-22 14:10:17 -0300
+Processing by PagesController#home as HTML
+  [1m[36mAbanda Load (2.5ms)[0m  [1m[34mSELECT  "abandas".* FROM "abandas" WHERE "abandas"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/_banner.html.erb (55.7ms) [cache miss]
+  Rendered pages/_abanda.html.erb (4.4ms) [cache miss]
+  Rendered pages/_agenda.html.erb (1.0ms) [cache miss]
+  Rendered pages/_discografia.html.erb (0.7ms) [cache miss]
+  Rendered pages/_fotos.html.erb (0.5ms) [cache miss]
+  Rendered pages/_videos.html.erb (0.8ms) [cache miss]
+  Rendered pages/_parceiros.html.erb (0.6ms) [cache miss]
+  Rendered pages/_contato.html.erb (0.7ms) [cache miss]
+  Rendered pages/home.html.erb within layouts/application (139.6ms)
+  [1m[36mBanner Load (1.2ms)[0m  [1m[34mSELECT  "banners".* FROM "banners" ORDER BY "banners"."id" ASC LIMIT ?[0m  [["LIMIT", 1]]
+Completed 500 Internal Server Error in 520ms (ActiveRecord: 3.8ms)
+
+
+  
+ActionView::Template::Error (undefined method `file' for nil:NilClass):
+    11:     <link href='https://fonts.googleapis.com/css?family=Source+Code+Pro:400,300' rel='stylesheet' type='text/css'>
+    12:   </head>
+    13: 
+    14:   <% if @banner.first.file %>
+    15:   <body style="background: url(<%= @banner.first.file %>) #080808 fixed center top no-repeat;">
+    16:   <% else %>
+    17:   <body style="background: #080808 fixed center top no-repeat;">
+  
+app/views/layouts/application.html.erb:14:in `_app_views_layouts_application_html_erb___1036634963680399158_70320976798740'
+Started GET "/" for 127.0.0.1 at 2017-05-22 14:10:33 -0300
+Processing by PagesController#home as HTML
+  [1m[36mAbanda Load (0.2ms)[0m  [1m[34mSELECT  "abandas".* FROM "abandas" WHERE "abandas"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/_banner.html.erb (16.6ms) [cache miss]
+  Rendered pages/_abanda.html.erb (2.2ms) [cache miss]
+  Rendered pages/_agenda.html.erb (0.7ms) [cache miss]
+  Rendered pages/_discografia.html.erb (0.8ms) [cache miss]
+  Rendered pages/_fotos.html.erb (0.6ms) [cache miss]
+  Rendered pages/_videos.html.erb (0.6ms) [cache miss]
+  Rendered pages/_parceiros.html.erb (0.5ms) [cache miss]
+  Rendered pages/_contato.html.erb (0.6ms) [cache miss]
+  Rendered pages/home.html.erb within layouts/application (94.0ms)
+  [1m[36mBanner Load (0.3ms)[0m  [1m[34mSELECT  "banners".* FROM "banners" ORDER BY "banners"."id" ASC LIMIT ?[0m  [["LIMIT", 1]]
+Completed 500 Internal Server Error in 285ms (ActiveRecord: 0.5ms)
+
+
+  
+ActionView::Template::Error (undefined method `file' for nil:NilClass):
+    12:   </head>
+    13: 
+    14:   <% if @banner %>
+    15:   <body style="background: url(<%= @banner.first.file %>) #080808 fixed center top no-repeat;">
+    16:   <% else %>
+    17:   <body style="background: #080808 fixed center top no-repeat;">
+    18:   <% end %>
+  
+app/views/layouts/application.html.erb:15:in `_app_views_layouts_application_html_erb___1036634963680399158_70320988547500'
+Started GET "/" for 127.0.0.1 at 2017-05-22 14:10:48 -0300
+Processing by PagesController#home as HTML
+  [1m[36mAbanda Load (0.2ms)[0m  [1m[34mSELECT  "abandas".* FROM "abandas" WHERE "abandas"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/_banner.html.erb (16.7ms) [cache miss]
+  Rendered pages/_abanda.html.erb (2.6ms) [cache miss]
+  Rendered pages/_agenda.html.erb (0.7ms) [cache miss]
+  Rendered pages/_discografia.html.erb (0.6ms) [cache miss]
+  Rendered pages/_fotos.html.erb (0.9ms) [cache miss]
+  Rendered pages/_videos.html.erb (0.6ms) [cache miss]
+  Rendered pages/_parceiros.html.erb (0.4ms) [cache miss]
+  Rendered pages/_contato.html.erb (0.4ms) [cache miss]
+  Rendered pages/home.html.erb within layouts/application (87.6ms)
+  [1m[36mBanner Load (0.3ms)[0m  [1m[34mSELECT  "banners".* FROM "banners" ORDER BY "banners"."id" ASC LIMIT ?[0m  [["LIMIT", 1]]
+Completed 200 OK in 168ms (Views: 155.9ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/images/agenda.jpg" for 127.0.0.1 at 2017-05-22 14:10:48 -0300
+  
+ActionController::RoutingError (No route matches [GET] "/images/agenda.jpg"):
+  
+actionpack (5.1.1) lib/action_dispatch/middleware/debug_exceptions.rb:63:in `call'
+web-console (3.5.1) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.5.1) lib/web_console/middleware.rb:28:in `block in call'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `catch'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `call'
+actionpack (5.1.1) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.1.1) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.1.1) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.1.1) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.1.1) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.1.1) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.1.1) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.0) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.1.1) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.1.1) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+rack (2.0.3) lib/rack/method_override.rb:22:in `call'
+rack (2.0.3) lib/rack/runtime.rb:22:in `call'
+activesupport (5.1.1) lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+actionpack (5.1.1) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.1) lib/action_dispatch/middleware/static.rb:125:in `call'
+rack (2.0.3) lib/rack/sendfile.rb:111:in `call'
+railties (5.1.1) lib/rails/engine.rb:522:in `call'
+puma (3.8.2) lib/puma/configuration.rb:224:in `call'
+puma (3.8.2) lib/puma/server.rb:600:in `handle_request'
+puma (3.8.2) lib/puma/server.rb:435:in `process_client'
+puma (3.8.2) lib/puma/server.rb:299:in `block in run'
+puma (3.8.2) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+Started GET "/users/sign_in" for 127.0.0.1 at 2017-05-22 14:10:55 -0300
+Processing by Devise::SessionsController#new as HTML
+  Rendering /Users/Thiago/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/devise-4.3.0/app/views/devise/sessions/new.html.erb within layouts/application
+  Rendered /Users/Thiago/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/devise-4.3.0/app/views/devise/shared/_links.html.erb (2.1ms) [cache miss]
+  Rendered /Users/Thiago/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/devise-4.3.0/app/views/devise/sessions/new.html.erb within layouts/application (23.8ms)
+Completed 500 Internal Server Error in 167ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (undefined method `first' for nil:NilClass):
+    11:     <link href='https://fonts.googleapis.com/css?family=Source+Code+Pro:400,300' rel='stylesheet' type='text/css'>
+    12:   </head>
+    13: 
+    14:   <% if @banner.first %>
+    15:   <body style="background: url(<%= @banner.first.file %>) #080808 fixed center top no-repeat;">
+    16:   <% else %>
+    17:   <body style="background: #080808 fixed center top no-repeat;">
+  
+app/views/layouts/application.html.erb:14:in `_app_views_layouts_application_html_erb___1036634963680399158_70320961402480'
+Started GET "/users/sign_in" for 127.0.0.1 at 2017-05-22 14:11:12 -0300
+Processing by Devise::SessionsController#new as HTML
+  Rendering /Users/Thiago/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/devise-4.3.0/app/views/devise/sessions/new.html.erb within layouts/application
+  Rendered /Users/Thiago/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/devise-4.3.0/app/views/devise/shared/_links.html.erb (1.8ms) [cache miss]
+  Rendered /Users/Thiago/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/devise-4.3.0/app/views/devise/sessions/new.html.erb within layouts/application (13.2ms)
+Completed 500 Internal Server Error in 95ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (undefined method `first' for nil:NilClass):
+    11:     <link href='https://fonts.googleapis.com/css?family=Source+Code+Pro:400,300' rel='stylesheet' type='text/css'>
+    12:   </head>
+    13: 
+    14:   <% if @banner.first %>
+    15:   <body style="background: url(<%= @banner.first.file %>) #080808 fixed center top no-repeat;">
+    16:   <% else %>
+    17:   <body style="background: #080808 fixed center top no-repeat;">
+  
+app/views/layouts/application.html.erb:14:in `_app_views_layouts_application_html_erb___1036634963680399158_70320980291180'
+Started GET "/" for 127.0.0.1 at 2017-05-22 14:11:17 -0300
+Processing by PagesController#home as HTML
+  [1m[36mAbanda Load (0.2ms)[0m  [1m[34mSELECT  "abandas".* FROM "abandas" WHERE "abandas"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/_banner.html.erb (5.2ms) [cache miss]
+  Rendered pages/_abanda.html.erb (1.1ms) [cache miss]
+  Rendered pages/_agenda.html.erb (1.0ms) [cache miss]
+  Rendered pages/_discografia.html.erb (0.8ms) [cache miss]
+  Rendered pages/_fotos.html.erb (0.5ms) [cache miss]
+  Rendered pages/_videos.html.erb (0.6ms) [cache miss]
+  Rendered pages/_parceiros.html.erb (0.6ms) [cache miss]
+  Rendered pages/_contato.html.erb (0.8ms) [cache miss]
+  Rendered pages/home.html.erb within layouts/application (90.0ms)
+  [1m[36mBanner Load (0.7ms)[0m  [1m[34mSELECT  "banners".* FROM "banners" ORDER BY "banners"."id" ASC LIMIT ?[0m  [["LIMIT", 1]]
+Completed 200 OK in 300ms (Views: 198.4ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/images/agenda.jpg" for 127.0.0.1 at 2017-05-22 14:11:18 -0300
+  
+ActionController::RoutingError (No route matches [GET] "/images/agenda.jpg"):
+  
+actionpack (5.1.1) lib/action_dispatch/middleware/debug_exceptions.rb:63:in `call'
+web-console (3.5.1) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.5.1) lib/web_console/middleware.rb:28:in `block in call'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `catch'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `call'
+actionpack (5.1.1) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.1.1) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.1.1) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.1.1) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.1.1) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.1.1) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.1.1) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.0) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.1.1) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.1.1) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+rack (2.0.3) lib/rack/method_override.rb:22:in `call'
+rack (2.0.3) lib/rack/runtime.rb:22:in `call'
+activesupport (5.1.1) lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+actionpack (5.1.1) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.1) lib/action_dispatch/middleware/static.rb:125:in `call'
+rack (2.0.3) lib/rack/sendfile.rb:111:in `call'
+railties (5.1.1) lib/rails/engine.rb:522:in `call'
+puma (3.8.2) lib/puma/configuration.rb:224:in `call'
+puma (3.8.2) lib/puma/server.rb:600:in `handle_request'
+puma (3.8.2) lib/puma/server.rb:435:in `process_client'
+puma (3.8.2) lib/puma/server.rb:299:in `block in run'
+puma (3.8.2) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+Started GET "/becj=kend" for 127.0.0.1 at 2017-05-22 14:11:22 -0300
+  
+ActionController::RoutingError (No route matches [GET] "/becj=kend"):
+  
+actionpack (5.1.1) lib/action_dispatch/middleware/debug_exceptions.rb:63:in `call'
+web-console (3.5.1) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.5.1) lib/web_console/middleware.rb:28:in `block in call'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `catch'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `call'
+actionpack (5.1.1) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.1.1) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.1.1) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.1.1) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.1.1) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.1.1) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.1.1) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.0) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.1.1) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.1.1) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+rack (2.0.3) lib/rack/method_override.rb:22:in `call'
+rack (2.0.3) lib/rack/runtime.rb:22:in `call'
+activesupport (5.1.1) lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+actionpack (5.1.1) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.1) lib/action_dispatch/middleware/static.rb:125:in `call'
+rack (2.0.3) lib/rack/sendfile.rb:111:in `call'
+railties (5.1.1) lib/rails/engine.rb:522:in `call'
+puma (3.8.2) lib/puma/configuration.rb:224:in `call'
+puma (3.8.2) lib/puma/server.rb:600:in `handle_request'
+puma (3.8.2) lib/puma/server.rb:435:in `process_client'
+puma (3.8.2) lib/puma/server.rb:299:in `block in run'
+puma (3.8.2) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+Started GET "/backend" for 127.0.0.1 at 2017-05-22 14:11:28 -0300
+Processing by RailsAdmin::MainController#dashboard as HTML
+Completed 401 Unauthorized in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2017-05-22 14:11:29 -0300
+Processing by Devise::SessionsController#new as HTML
+  Rendering /Users/Thiago/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/devise-4.3.0/app/views/devise/sessions/new.html.erb within layouts/application
+  Rendered /Users/Thiago/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/devise-4.3.0/app/views/devise/shared/_links.html.erb (1.9ms) [cache miss]
+  Rendered /Users/Thiago/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/devise-4.3.0/app/views/devise/sessions/new.html.erb within layouts/application (12.8ms)
+Completed 500 Internal Server Error in 125ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (undefined method `first' for nil:NilClass):
+    11:     <link href='https://fonts.googleapis.com/css?family=Source+Code+Pro:400,300' rel='stylesheet' type='text/css'>
+    12:   </head>
+    13: 
+    14:   <% if @banner.first %>
+    15:   <body style="background: url(<%= @banner.first.file %>) #080808 fixed center top no-repeat;">
+    16:   <% else %>
+    17:   <body style="background: #080808 fixed center top no-repeat;">
+  
+app/views/layouts/application.html.erb:14:in `_app_views_layouts_application_html_erb___1036634963680399158_70320979676920'
+Started GET "/users/sign_in" for 127.0.0.1 at 2017-05-22 14:12:15 -0300
+Processing by Devise::SessionsController#new as HTML
+  Rendering /Users/Thiago/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/devise-4.3.0/app/views/devise/sessions/new.html.erb within layouts/application
+  Rendered /Users/Thiago/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/devise-4.3.0/app/views/devise/shared/_links.html.erb (2.2ms) [cache miss]
+  Rendered /Users/Thiago/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/devise-4.3.0/app/views/devise/sessions/new.html.erb within layouts/application (47.7ms)
+Completed 500 Internal Server Error in 401ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (undefined method `first' for nil:NilClass):
+    11:     <link href='https://fonts.googleapis.com/css?family=Source+Code+Pro:400,300' rel='stylesheet' type='text/css'>
+    12:   </head>
+    13: 
+    14:   <% if @banner.first %>
+    15:   <body style="background: url(<%= @banner.first.file %>) #080808 fixed center top no-repeat;">
+    16:   <% else %>
+    17:   <body style="background: #080808 fixed center top no-repeat;">
+  
+app/views/layouts/application.html.erb:14:in `_app_views_layouts_application_html_erb___1036634963680399158_70320988283660'
+DEPRECATION WARNING: ActionView::Template::Handlers::Erubis is deprecated and will be removed from Rails 5.2. Switch to ActionView::Template::Handlers::ERB::Erubi instead. (called from <top (required)> at /Users/Thiago/Sites/CanoSerrado/config/environment.rb:5)
+  [1m[35m (10.7ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mUser Exists (16.3ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "admin@canoserrado.com.br"], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (6.3ms)[0m  [1m[32mINSERT INTO "abandas" ("title", "description", "created_at", "updated_at", "file") VALUES (?, ?, ?, ?, ?)[0m  [["title", "A Banda"], ["description", "<p class=\"code\">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras imperdiet turpis neque, ut interdum eros. Nulla at libero a justo ultricies ullamcorper. Ut consectetur a dolor aliquam maximus. Quisque at risus sed tortor dapibus fermentum. Mauris commodo rutrum purus vel egestas.</p><p class=\"code\"><br>Vestibulum et urna vitae nibh condimentum tempus a at nibh. Fusce efficitur, felis in eleifend dignissim, lorem posuere ex, ac condimentum odio ex a magna. Duis non dapibus lectus. Pellentesque dignissim bibendum diam in varius. In feugiat mauris posuere consequat efficitur. Aenean tempus malesuada libero vel tristique.</p>"], ["created_at", "2017-05-22 17:12:29.704769"], ["updated_at", "2017-05-22 17:12:29.704769"], ["file", nil]]
+  [1m[35m (2.6ms)[0m  [1m[36mcommit transaction[0m
+DEPRECATION WARNING: ActionView::Template::Handlers::Erubis is deprecated and will be removed from Rails 5.2. Switch to ActionView::Template::Handlers::ERB::Erubi instead. (called from <top (required)> at /Users/Thiago/Sites/CanoSerrado/config/environment.rb:5)
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mUser Exists (0.3ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "admin@canoserrado.com.br"], ["LIMIT", 1]]
+  [1m[35m (0.2ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (4.4ms)[0m  [1m[32mINSERT INTO "abandas" ("title", "description", "created_at", "updated_at", "file") VALUES (?, ?, ?, ?, ?)[0m  [["title", "A Banda"], ["description", "<p class=\"code\">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras imperdiet turpis neque, ut interdum eros. Nulla at libero a justo ultricies ullamcorper. Ut consectetur a dolor aliquam maximus. Quisque at risus sed tortor dapibus fermentum. Mauris commodo rutrum purus vel egestas.</p><p class=\"code\"><br>Vestibulum et urna vitae nibh condimentum tempus a at nibh. Fusce efficitur, felis in eleifend dignissim, lorem posuere ex, ac condimentum odio ex a magna. Duis non dapibus lectus. Pellentesque dignissim bibendum diam in varius. In feugiat mauris posuere consequat efficitur. Aenean tempus malesuada libero vel tristique.</p>"], ["created_at", "2017-05-22 17:13:03.072659"], ["updated_at", "2017-05-22 17:13:03.072659"], ["file", nil]]
+  [1m[35m (2.3ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.8ms)[0m  [1m[32mINSERT INTO "banners" ("name", "file", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["name", "Banner 01"], ["file", nil], ["created_at", "2017-05-22 17:13:03.140316"], ["updated_at", "2017-05-22 17:13:03.140316"]]
+  [1m[35m (2.1ms)[0m  [1m[36mcommit transaction[0m
+Started GET "/users/sign_in" for 127.0.0.1 at 2017-05-22 14:13:07 -0300
+Processing by Devise::SessionsController#new as HTML
+  Rendering /Users/Thiago/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/devise-4.3.0/app/views/devise/sessions/new.html.erb within layouts/application
+  Rendered /Users/Thiago/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/devise-4.3.0/app/views/devise/shared/_links.html.erb (2.7ms) [cache miss]
+  Rendered /Users/Thiago/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/devise-4.3.0/app/views/devise/sessions/new.html.erb within layouts/application (18.5ms)
+Completed 500 Internal Server Error in 289ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (undefined method `first' for nil:NilClass):
+    11:     <link href='https://fonts.googleapis.com/css?family=Source+Code+Pro:400,300' rel='stylesheet' type='text/css'>
+    12:   </head>
+    13: 
+    14:   <% if @banner.first %>
+    15:   <body style="background: url(<%= @banner.first.file %>) #080808 fixed center top no-repeat;">
+    16:   <% else %>
+    17:   <body style="background: #080808 fixed center top no-repeat;">
+  
+app/views/layouts/application.html.erb:14:in `_app_views_layouts_application_html_erb___1036634963680399158_70320956749540'
+Started GET "/" for 127.0.0.1 at 2017-05-22 14:13:15 -0300
+Processing by PagesController#home as HTML
+  [1m[36mAbanda Load (1.2ms)[0m  [1m[34mSELECT  "abandas".* FROM "abandas" WHERE "abandas"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/_banner.html.erb (43.2ms) [cache miss]
+  Rendered pages/_abanda.html.erb (2.1ms) [cache miss]
+  Rendered pages/_agenda.html.erb (0.7ms) [cache miss]
+  Rendered pages/_discografia.html.erb (0.6ms) [cache miss]
+  Rendered pages/_fotos.html.erb (1.2ms) [cache miss]
+  Rendered pages/_videos.html.erb (1.1ms) [cache miss]
+  Rendered pages/_parceiros.html.erb (2.1ms) [cache miss]
+  Rendered pages/_contato.html.erb (0.7ms) [cache miss]
+  Rendered pages/home.html.erb within layouts/application (134.9ms)
+  [1m[36mBanner Load (0.5ms)[0m  [1m[34mSELECT  "banners".* FROM "banners" ORDER BY "banners"."id" ASC LIMIT ?[0m  [["LIMIT", 1]]
+Completed 200 OK in 302ms (Views: 241.5ms | ActiveRecord: 1.7ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-05-22 14:13:15 -0300
+Processing by PagesController#home as HTML
+  [1m[36mAbanda Load (0.2ms)[0m  [1m[34mSELECT  "abandas".* FROM "abandas" WHERE "abandas"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+Started GET "/images/agenda.jpg" for 127.0.0.1 at 2017-05-22 14:13:15 -0300
+  
+ActionController::RoutingError (No route matches [GET] "/images/agenda.jpg"):
+  
+actionpack (5.1.1) lib/action_dispatch/middleware/debug_exceptions.rb:63:in `call'
+web-console (3.5.1) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.5.1) lib/web_console/middleware.rb:28:in `block in call'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `catch'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `call'
+actionpack (5.1.1) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.1.1) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.1.1) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.1.1) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.1.1) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.1.1) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.1.1) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.0) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.1.1) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.1.1) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+rack (2.0.3) lib/rack/method_override.rb:22:in `call'
+rack (2.0.3) lib/rack/runtime.rb:22:in `call'
+activesupport (5.1.1) lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+actionpack (5.1.1) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.1) lib/action_dispatch/middleware/static.rb:125:in `call'
+rack (2.0.3) lib/rack/sendfile.rb:111:in `call'
+railties (5.1.1) lib/rails/engine.rb:522:in `call'
+puma (3.8.2) lib/puma/configuration.rb:224:in `call'
+puma (3.8.2) lib/puma/server.rb:600:in `handle_request'
+puma (3.8.2) lib/puma/server.rb:435:in `process_client'
+puma (3.8.2) lib/puma/server.rb:299:in `block in run'
+puma (3.8.2) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/_banner.html.erb (3.6ms) [cache miss]
+  Rendered pages/_abanda.html.erb (2.2ms) [cache miss]
+  Rendered pages/_agenda.html.erb (1.2ms) [cache miss]
+  Rendered pages/_discografia.html.erb (1.7ms) [cache miss]
+  Rendered pages/_fotos.html.erb (3.0ms) [cache miss]
+  Rendered pages/_videos.html.erb (0.5ms) [cache miss]
+  Rendered pages/_parceiros.html.erb (0.5ms) [cache miss]
+  Rendered pages/_contato.html.erb (0.8ms) [cache miss]
+  Rendered pages/home.html.erb within layouts/application (78.4ms)
+  [1m[36mBanner Load (0.4ms)[0m  [1m[34mSELECT  "banners".* FROM "banners" ORDER BY "banners"."id" ASC LIMIT ?[0m  [["LIMIT", 1]]
+Completed 200 OK in 328ms (Views: 322.6ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-05-22 14:13:25 -0300
+Processing by PagesController#home as HTML
+  [1m[36mAbanda Load (0.2ms)[0m  [1m[34mSELECT  "abandas".* FROM "abandas" WHERE "abandas"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/_banner.html.erb (3.0ms) [cache miss]
+  Rendered pages/_abanda.html.erb (0.9ms) [cache miss]
+  Rendered pages/_agenda.html.erb (0.7ms) [cache miss]
+  Rendered pages/_discografia.html.erb (0.7ms) [cache miss]
+  Rendered pages/_fotos.html.erb (0.5ms) [cache miss]
+  Rendered pages/_videos.html.erb (0.9ms) [cache miss]
+  Rendered pages/_parceiros.html.erb (0.5ms) [cache miss]
+  Rendered pages/_contato.html.erb (0.6ms) [cache miss]
+  Rendered pages/home.html.erb within layouts/application (31.9ms)
+  [1m[36mBanner Load (0.3ms)[0m  [1m[34mSELECT  "banners".* FROM "banners" ORDER BY "banners"."id" ASC LIMIT ?[0m  [["LIMIT", 1]]
+Completed 200 OK in 103ms (Views: 98.1ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/images/agenda.jpg" for 127.0.0.1 at 2017-05-22 14:13:25 -0300
+  
+ActionController::RoutingError (No route matches [GET] "/images/agenda.jpg"):
+  
+Started GET "/" for 127.0.0.1 at 2017-05-22 14:13:25 -0300
+actionpack (5.1.1) lib/action_dispatch/middleware/debug_exceptions.rb:63:in `call'
+web-console (3.5.1) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.5.1) lib/web_console/middleware.rb:28:in `block in call'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `catch'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `call'
+actionpack (5.1.1) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.1.1) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.1.1) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.1.1) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.1.1) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.1.1) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.1.1) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.0) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.1.1) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.1.1) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+rack (2.0.3) lib/rack/method_override.rb:22:in `call'
+rack (2.0.3) lib/rack/runtime.rb:22:in `call'
+activesupport (5.1.1) lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+actionpack (5.1.1) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.1) lib/action_dispatch/middleware/static.rb:125:in `call'
+rack (2.0.3) lib/rack/sendfile.rb:111:in `call'
+railties (5.1.1) lib/rails/engine.rb:522:in `call'
+puma (3.8.2) lib/puma/configuration.rb:224:in `call'
+puma (3.8.2) lib/puma/server.rb:600:in `handle_request'
+puma (3.8.2) lib/puma/server.rb:435:in `process_client'
+puma (3.8.2) lib/puma/server.rb:299:in `block in run'
+puma (3.8.2) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+Processing by PagesController#home as HTML
+  [1m[36mAbanda Load (0.2ms)[0m  [1m[34mSELECT  "abandas".* FROM "abandas" WHERE "abandas"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/_banner.html.erb (4.5ms) [cache miss]
+  Rendered pages/_abanda.html.erb (1.1ms) [cache miss]
+  Rendered pages/_agenda.html.erb (0.7ms) [cache miss]
+  Rendered pages/_discografia.html.erb (0.5ms) [cache miss]
+  Rendered pages/_fotos.html.erb (0.6ms) [cache miss]
+  Rendered pages/_videos.html.erb (0.5ms) [cache miss]
+  Rendered pages/_parceiros.html.erb (0.5ms) [cache miss]
+  Rendered pages/_contato.html.erb (0.5ms) [cache miss]
+  Rendered pages/home.html.erb within layouts/application (301.9ms)
+  [1m[36mBanner Load (0.3ms)[0m  [1m[34mSELECT  "banners".* FROM "banners" ORDER BY "banners"."id" ASC LIMIT ?[0m  [["LIMIT", 1]]
+Completed 200 OK in 480ms (Views: 475.0ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/backend" for 127.0.0.1 at 2017-05-22 14:13:30 -0300
+Processing by RailsAdmin::MainController#dashboard as HTML
+Completed 401 Unauthorized in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2017-05-22 14:13:30 -0300
+Processing by Devise::SessionsController#new as HTML
+  Rendering /Users/Thiago/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/devise-4.3.0/app/views/devise/sessions/new.html.erb within layouts/application
+  Rendered /Users/Thiago/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/devise-4.3.0/app/views/devise/shared/_links.html.erb (1.9ms) [cache miss]
+  Rendered /Users/Thiago/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/devise-4.3.0/app/views/devise/sessions/new.html.erb within layouts/application (13.1ms)
+Completed 500 Internal Server Error in 114ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (undefined method `first' for nil:NilClass):
+    11:     <link href='https://fonts.googleapis.com/css?family=Source+Code+Pro:400,300' rel='stylesheet' type='text/css'>
+    12:   </head>
+    13: 
+    14:   <% if @banner.first %>
+    15:   <body style="background: url(<%= @banner.first.file %>) #080808 fixed center top no-repeat;">
+    16:   <% else %>
+    17:   <body style="background: #080808 fixed center top no-repeat;">
+  
+app/views/layouts/application.html.erb:14:in `_app_views_layouts_application_html_erb___1036634963680399158_70320981242100'
+Started GET "/users/sign_in" for 127.0.0.1 at 2017-05-22 14:14:59 -0300
+Processing by Devise::SessionsController#new as HTML
+  Rendering /Users/Thiago/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/devise-4.3.0/app/views/devise/sessions/new.html.erb within layouts/application
+  Rendered /Users/Thiago/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/devise-4.3.0/app/views/devise/shared/_links.html.erb (6.2ms) [cache miss]
+  Rendered /Users/Thiago/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/devise-4.3.0/app/views/devise/sessions/new.html.erb within layouts/application (35.5ms)
+Completed 200 OK in 411ms (Views: 371.2ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/users/sign_in" for 127.0.0.1 at 2017-05-22 14:15:13 -0300
+Processing by Devise::SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"Gs+7DY2MsElLIWOTo8JiUNUoF1FbwPAh3YKA+88nVwOBoqO5AoMc3Kn7ID+VjTxI8hTqhuiRzP8DZO/8RHcoKw==", "user"=>{"email"=>"admin@canoserrado.com.br", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Log in"}
+  [1m[36mUser Load (13.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["email", "admin@canoserrado.com.br"], ["LIMIT", 1]]
+  [1m[35m (0.2ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.9ms)[0m  [1m[33mUPDATE "users" SET "current_sign_in_at" = ?, "last_sign_in_at" = ?, "current_sign_in_ip" = ?, "last_sign_in_ip" = ?, "sign_in_count" = ?, "updated_at" = ? WHERE "users"."id" = ?[0m  [["current_sign_in_at", "2017-05-22 17:15:14.146806"], ["last_sign_in_at", "2017-05-22 17:15:14.146806"], ["current_sign_in_ip", "127.0.0.1"], ["last_sign_in_ip", "127.0.0.1"], ["sign_in_count", 1], ["updated_at", "2017-05-22 17:15:14.150343"], ["id", 1]]
+  [1m[35m (2.3ms)[0m  [1m[36mcommit transaction[0m
+Redirected to http://localhost:3000/backend/
+Completed 302 Found in 531ms (ActiveRecord: 16.7ms)
+
+
+Started GET "/backend/" for 127.0.0.1 at 2017-05-22 14:15:14 -0300
+Processing by RailsAdmin::MainController#dashboard as HTML
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT COUNT(*) FROM "abandas"[0m
+  [1m[36mAbanda Load (0.4ms)[0m  [1m[34mSELECT  "abandas".* FROM "abandas" ORDER BY "abandas"."id" DESC LIMIT ?[0m  [["LIMIT", 1]]
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT COUNT(*) FROM "agendas"[0m
+  [1m[36mAgenda Load (0.2ms)[0m  [1m[34mSELECT  "agendas".* FROM "agendas" ORDER BY "agendas"."id" DESC LIMIT ?[0m  [["LIMIT", 1]]
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT COUNT(*) FROM "banners"[0m
+  [1m[36mBanner Load (0.3ms)[0m  [1m[34mSELECT  "banners".* FROM "banners" ORDER BY "banners"."id" DESC LIMIT ?[0m  [["LIMIT", 1]]
+  [1m[35m (12.8ms)[0m  [1m[34mSELECT COUNT(*) FROM "discografias"[0m
+  [1m[36mDiscografia Load (0.2ms)[0m  [1m[34mSELECT  "discografias".* FROM "discografias" ORDER BY "discografias"."id" DESC LIMIT ?[0m  [["LIMIT", 1]]
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT COUNT(*) FROM "mp3s"[0m
+  [1m[36mMp3 Load (0.5ms)[0m  [1m[34mSELECT  "mp3s".* FROM "mp3s" ORDER BY "mp3s"."id" DESC LIMIT ?[0m  [["LIMIT", 1]]
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT COUNT(*) FROM "photos"[0m
+  [1m[36mPhoto Load (0.1ms)[0m  [1m[34mSELECT  "photos".* FROM "photos" ORDER BY "photos"."id" DESC LIMIT ?[0m  [["LIMIT", 1]]
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT COUNT(*) FROM "users"[0m
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" ORDER BY "users"."id" DESC LIMIT ?[0m  [["LIMIT", 1]]
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT COUNT(*) FROM "videos"[0m
+  [1m[36mVideo Load (0.2ms)[0m  [1m[34mSELECT  "videos".* FROM "videos" ORDER BY "videos"."id" DESC LIMIT ?[0m  [["LIMIT", 1]]
+  Rendering /Users/Thiago/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/rails_admin-1.1.1/app/views/rails_admin/main/dashboard.html.haml within layouts/rails_admin/application
+  Rendered /Users/Thiago/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/rails_admin-1.1.1/app/views/rails_admin/main/dashboard.html.haml within layouts/rails_admin/application (68.6ms)
+  Rendered /Users/Thiago/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/rails_admin-1.1.1/app/views/layouts/rails_admin/_secondary_navigation.html.haml (9.0ms) [cache miss]
+  Rendered /Users/Thiago/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/rails_admin-1.1.1/app/views/layouts/rails_admin/_navigation.html.haml (33.6ms) [cache miss]
+  Rendered /Users/Thiago/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/rails_admin-1.1.1/app/views/layouts/rails_admin/_sidebar_navigation.html.haml (20.2ms) [cache miss]
+  Rendering /Users/Thiago/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/rails_admin-1.1.1/app/views/layouts/rails_admin/pjax.html.haml
+  Rendered /Users/Thiago/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/rails_admin-1.1.1/app/views/layouts/rails_admin/pjax.html.haml (10.7ms)
+Completed 200 OK in 2190ms (Views: 1602.1ms | ActiveRecord: 26.2ms)
+
+
+Started GET "/backend/abanda?_pjax=%5Bdata-pjax-container%5D" for 127.0.0.1 at 2017-05-22 14:15:23 -0300
+Processing by RailsAdmin::MainController#index as HTML
+  Parameters: {"_pjax"=>"[data-pjax-container]", "model_name"=>"abanda"}
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering /Users/Thiago/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/rails_admin-1.1.1/app/views/rails_admin/main/index.html.haml within layouts/rails_admin/pjax
+  [1m[36mAbanda Load (0.4ms)[0m  [1m[34mSELECT  "abandas".* FROM "abandas" ORDER BY abandas.id desc LIMIT ? OFFSET ?[0m  [["LIMIT", 20], ["OFFSET", 0]]
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT COUNT(*) FROM "abandas"[0m
+  Rendered /Users/Thiago/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/rails_admin-1.1.1/app/views/rails_admin/main/index.html.haml within layouts/rails_admin/pjax (346.8ms)
+Completed 200 OK in 579ms (Views: 532.7ms | ActiveRecord: 1.5ms)
+
+
+Started GET "/backend/abanda/3/delete?_pjax=%5Bdata-pjax-container%5D" for 127.0.0.1 at 2017-05-22 14:15:28 -0300
+Processing by RailsAdmin::MainController#delete as HTML
+  Parameters: {"_pjax"=>"[data-pjax-container]", "model_name"=>"abanda", "id"=>"3"}
+  [1m[36mUser Load (1.9ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mAbanda Load (0.3ms)[0m  [1m[34mSELECT  "abandas".* FROM "abandas" WHERE "abandas"."id" = ? ORDER BY "abandas"."id" ASC LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  Rendering /Users/Thiago/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/rails_admin-1.1.1/app/views/rails_admin/main/delete.html.haml within layouts/rails_admin/pjax
+  Rendered /Users/Thiago/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/rails_admin-1.1.1/app/views/rails_admin/main/_delete_notice.html.haml (50.9ms) [cache miss]
+  Rendered /Users/Thiago/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/rails_admin-1.1.1/app/views/rails_admin/main/delete.html.haml within layouts/rails_admin/pjax (87.4ms)
+Completed 200 OK in 216ms (Views: 177.6ms | ActiveRecord: 2.3ms)
+
+
+Started DELETE "/backend/abanda/3/delete" for 127.0.0.1 at 2017-05-22 14:15:30 -0300
+Processing by RailsAdmin::MainController#delete as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"bI6pM4+5Q2+Xuqd73I1UaqMkRRZqtEA1OHgHBVv4NPmqIi563KtVyor8Mka3lvgj1BxlgR2LksqKDOEW0C+yvQ==", "return_to"=>"http://localhost:3000/backend/abanda", "model_name"=>"abanda", "id"=>"3"}
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mAbanda Load (0.3ms)[0m  [1m[34mSELECT  "abandas".* FROM "abandas" WHERE "abandas"."id" = ? ORDER BY "abandas"."id" ASC LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (50.0ms)[0m  [1m[31mDELETE FROM "abandas" WHERE "abandas"."id" = ?[0m  [["id", 3]]
+  [1m[35m (3.6ms)[0m  [1m[36mcommit transaction[0m
+Redirected to http://localhost:3000/backend/abanda
+Completed 302 Found in 102ms (ActiveRecord: 54.6ms)
+
+
+Started GET "/backend/abanda" for 127.0.0.1 at 2017-05-22 14:15:31 -0300
+Processing by RailsAdmin::MainController#index as HTML
+  Parameters: {"model_name"=>"abanda"}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering /Users/Thiago/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/rails_admin-1.1.1/app/views/rails_admin/main/index.html.haml within layouts/rails_admin/application
+  [1m[36mAbanda Load (0.4ms)[0m  [1m[34mSELECT  "abandas".* FROM "abandas" ORDER BY abandas.id desc LIMIT ? OFFSET ?[0m  [["LIMIT", 20], ["OFFSET", 0]]
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT COUNT(*) FROM "abandas"[0m
+  Rendered /Users/Thiago/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/rails_admin-1.1.1/app/views/rails_admin/main/index.html.haml within layouts/rails_admin/application (247.4ms)
+  Rendered /Users/Thiago/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/rails_admin-1.1.1/app/views/layouts/rails_admin/_secondary_navigation.html.haml (7.8ms) [cache miss]
+  Rendered /Users/Thiago/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/rails_admin-1.1.1/app/views/layouts/rails_admin/_navigation.html.haml (34.4ms) [cache miss]
+  Rendered /Users/Thiago/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/rails_admin-1.1.1/app/views/layouts/rails_admin/_sidebar_navigation.html.haml (17.3ms) [cache miss]
+  Rendering /Users/Thiago/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/rails_admin-1.1.1/app/views/layouts/rails_admin/pjax.html.haml
+  Rendered /Users/Thiago/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/rails_admin-1.1.1/app/views/layouts/rails_admin/pjax.html.haml (20.2ms)
+Completed 200 OK in 1249ms (Views: 1064.3ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/backend/abanda/2/delete?_pjax=%5Bdata-pjax-container%5D" for 127.0.0.1 at 2017-05-22 14:15:34 -0300
+Processing by RailsAdmin::MainController#delete as HTML
+  Parameters: {"_pjax"=>"[data-pjax-container]", "model_name"=>"abanda", "id"=>"2"}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mAbanda Load (58.2ms)[0m  [1m[34mSELECT  "abandas".* FROM "abandas" WHERE "abandas"."id" = ? ORDER BY "abandas"."id" ASC LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering /Users/Thiago/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/rails_admin-1.1.1/app/views/rails_admin/main/delete.html.haml within layouts/rails_admin/pjax
+  Rendered /Users/Thiago/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/rails_admin-1.1.1/app/views/rails_admin/main/_delete_notice.html.haml (9.9ms) [cache miss]
+  Rendered /Users/Thiago/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/rails_admin-1.1.1/app/views/rails_admin/main/delete.html.haml within layouts/rails_admin/pjax (46.5ms)
+Completed 200 OK in 281ms (Views: 135.2ms | ActiveRecord: 58.6ms)
+
+
+Started DELETE "/backend/abanda/2/delete" for 127.0.0.1 at 2017-05-22 14:15:35 -0300
+Processing by RailsAdmin::MainController#delete as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"Uy4yupjt61Y1qARlu7Ccimmt2OMz2Fa6/i2x7K1lDiEBNfXZXwqJqAM0UMX8lZuEYVf1EfFNVaFYsUSCo40Ojg==", "return_to"=>"http://localhost:3000/backend/abanda", "model_name"=>"abanda", "id"=>"2"}
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mAbanda Load (0.4ms)[0m  [1m[34mSELECT  "abandas".* FROM "abandas" WHERE "abandas"."id" = ? ORDER BY "abandas"."id" ASC LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.5ms)[0m  [1m[31mDELETE FROM "abandas" WHERE "abandas"."id" = ?[0m  [["id", 2]]
+  [1m[35m (10.5ms)[0m  [1m[36mcommit transaction[0m
+Redirected to http://localhost:3000/backend/abanda
+Completed 302 Found in 74ms (ActiveRecord: 12.1ms)
+
+
+Started GET "/backend/abanda" for 127.0.0.1 at 2017-05-22 14:15:35 -0300
+Processing by RailsAdmin::MainController#index as HTML
+  Parameters: {"model_name"=>"abanda"}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering /Users/Thiago/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/rails_admin-1.1.1/app/views/rails_admin/main/index.html.haml within layouts/rails_admin/application
+  [1m[36mAbanda Load (0.3ms)[0m  [1m[34mSELECT  "abandas".* FROM "abandas" ORDER BY abandas.id desc LIMIT ? OFFSET ?[0m  [["LIMIT", 20], ["OFFSET", 0]]
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT COUNT(*) FROM "abandas"[0m
+  Rendered /Users/Thiago/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/rails_admin-1.1.1/app/views/rails_admin/main/index.html.haml within layouts/rails_admin/application (159.2ms)
+  Rendered /Users/Thiago/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/rails_admin-1.1.1/app/views/layouts/rails_admin/_secondary_navigation.html.haml (8.3ms) [cache miss]
+  Rendered /Users/Thiago/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/rails_admin-1.1.1/app/views/layouts/rails_admin/_navigation.html.haml (24.9ms) [cache miss]
+  Rendered /Users/Thiago/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/rails_admin-1.1.1/app/views/layouts/rails_admin/_sidebar_navigation.html.haml (21.9ms) [cache miss]
+  Rendering /Users/Thiago/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/rails_admin-1.1.1/app/views/layouts/rails_admin/pjax.html.haml
+  Rendered /Users/Thiago/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/rails_admin-1.1.1/app/views/layouts/rails_admin/pjax.html.haml (15.1ms)
+Completed 200 OK in 548ms (Views: 523.9ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/backend/banner?_pjax=%5Bdata-pjax-container%5D" for 127.0.0.1 at 2017-05-22 14:17:01 -0300
+Processing by RailsAdmin::MainController#index as HTML
+  Parameters: {"_pjax"=>"[data-pjax-container]", "model_name"=>"banner"}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering /Users/Thiago/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/rails_admin-1.1.1/app/views/rails_admin/main/index.html.haml within layouts/rails_admin/pjax
+  [1m[36mBanner Load (0.3ms)[0m  [1m[34mSELECT  "banners".* FROM "banners" ORDER BY banners.id desc LIMIT ? OFFSET ?[0m  [["LIMIT", 20], ["OFFSET", 0]]
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT COUNT(*) FROM "banners"[0m
+  Rendered /Users/Thiago/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/rails_admin-1.1.1/app/views/rails_admin/main/index.html.haml within layouts/rails_admin/pjax (69.6ms)
+Completed 200 OK in 137ms (Views: 117.9ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/backend/banner/1/edit?_pjax=%5Bdata-pjax-container%5D" for 127.0.0.1 at 2017-05-22 14:17:03 -0300
+Processing by RailsAdmin::MainController#edit as HTML
+  Parameters: {"_pjax"=>"[data-pjax-container]", "model_name"=>"banner", "id"=>"1"}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mBanner Load (0.4ms)[0m  [1m[34mSELECT  "banners".* FROM "banners" WHERE "banners"."id" = ? ORDER BY "banners"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering /Users/Thiago/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/rails_admin-1.1.1/app/views/rails_admin/main/edit.html.haml within layouts/rails_admin/pjax
+  Rendered /Users/Thiago/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/rails_admin-1.1.1/app/views/rails_admin/main/_form_field.html.haml (3.0ms) [cache miss]
+  Rendered /Users/Thiago/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/rails_admin-1.1.1/app/views/rails_admin/main/_form_file_upload.html.haml (172.9ms) [cache miss]
+  Rendered /Users/Thiago/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/rails_admin-1.1.1/app/views/rails_admin/main/_submit_buttons.html.haml (41.2ms) [cache miss]
+  Rendered /Users/Thiago/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/rails_admin-1.1.1/app/views/rails_admin/main/edit.html.haml within layouts/rails_admin/pjax (306.1ms)
+Completed 200 OK in 412ms (Views: 365.5ms | ActiveRecord: 0.8ms)
+
+
+Started PUT "/backend/banner/1/edit" for 127.0.0.1 at 2017-05-22 14:17:11 -0300
+Processing by RailsAdmin::MainController#edit as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"PagrrozBXgAoGsRHjSTzgTGA1fKH1qZ+MLbltTQJktSc9YcqJ7F1HGzp+LgiUy3m9qx1a4bwlVWAIBzQfOyviQ==", "banner"=>{"name"=>"Banner 01", "file"=>#<ActionDispatch::Http::UploadedFile:0x007fe9c1becc08 @tempfile=#<Tempfile:/var/folders/zf/r06fnwyx1d56jnlps_vyrsgr0000gn/T/RackMultipart20170522-5634-1rq9mef.jpg>, @original_filename="background.jpg", @content_type="image/jpeg", @headers="Content-Disposition: form-data; name=\"banner[file]\"; filename=\"background.jpg\"\r\nContent-Type: image/jpeg\r\n">, "file_cache"=>""}, "return_to"=>"http://localhost:3000/backend/banner", "_save"=>"", "model_name"=>"banner", "id"=>"1"}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mBanner Load (0.4ms)[0m  [1m[34mSELECT  "banners".* FROM "banners" WHERE "banners"."id" = ? ORDER BY "banners"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[35m (0.2ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.9ms)[0m  [1m[33mUPDATE "banners" SET "file" = ?, "updated_at" = ? WHERE "banners"."id" = ?[0m  [["file", "background.jpg"], ["updated_at", "2017-05-22 17:17:11.968589"], ["id", 1]]
+  [1m[35m (17.9ms)[0m  [1m[36mcommit transaction[0m
+Redirected to http://localhost:3000/backend/banner
+Completed 302 Found in 125ms (ActiveRecord: 19.7ms)
+
+
+Started GET "/backend/banner" for 127.0.0.1 at 2017-05-22 14:17:12 -0300
+Processing by RailsAdmin::MainController#index as HTML
+  Parameters: {"model_name"=>"banner"}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering /Users/Thiago/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/rails_admin-1.1.1/app/views/rails_admin/main/index.html.haml within layouts/rails_admin/application
+  [1m[36mBanner Load (0.5ms)[0m  [1m[34mSELECT  "banners".* FROM "banners" ORDER BY banners.id desc LIMIT ? OFFSET ?[0m  [["LIMIT", 20], ["OFFSET", 0]]
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT COUNT(*) FROM "banners"[0m
+  Rendered /Users/Thiago/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/rails_admin-1.1.1/app/views/rails_admin/main/index.html.haml within layouts/rails_admin/application (116.8ms)
+  Rendered /Users/Thiago/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/rails_admin-1.1.1/app/views/layouts/rails_admin/_secondary_navigation.html.haml (6.6ms) [cache miss]
+  Rendered /Users/Thiago/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/rails_admin-1.1.1/app/views/layouts/rails_admin/_navigation.html.haml (23.6ms) [cache miss]
+  Rendered /Users/Thiago/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/rails_admin-1.1.1/app/views/layouts/rails_admin/_sidebar_navigation.html.haml (14.1ms) [cache miss]
+  Rendering /Users/Thiago/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/rails_admin-1.1.1/app/views/layouts/rails_admin/pjax.html.haml
+  Rendered /Users/Thiago/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/rails_admin-1.1.1/app/views/layouts/rails_admin/pjax.html.haml (11.7ms)
+Completed 200 OK in 1366ms (Views: 1334.4ms | ActiveRecord: 1.3ms)
+
+
+Started GET "/backend/agenda?_pjax=%5Bdata-pjax-container%5D" for 127.0.0.1 at 2017-05-22 14:17:16 -0300
+Processing by RailsAdmin::MainController#index as HTML
+  Parameters: {"_pjax"=>"[data-pjax-container]", "model_name"=>"agenda"}
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering /Users/Thiago/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/rails_admin-1.1.1/app/views/rails_admin/main/index.html.haml within layouts/rails_admin/pjax
+  [1m[36mAgenda Load (0.7ms)[0m  [1m[34mSELECT  "agendas".* FROM "agendas" ORDER BY agendas.id desc LIMIT ? OFFSET ?[0m  [["LIMIT", 20], ["OFFSET", 0]]
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT COUNT(*) FROM "agendas"[0m
+  Rendered /Users/Thiago/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/rails_admin-1.1.1/app/views/rails_admin/main/index.html.haml within layouts/rails_admin/pjax (57.5ms)
+Completed 200 OK in 126ms (Views: 88.4ms | ActiveRecord: 1.6ms)
+
+
+Started GET "/backend/abanda?_pjax=%5Bdata-pjax-container%5D" for 127.0.0.1 at 2017-05-22 14:17:19 -0300
+Processing by RailsAdmin::MainController#index as HTML
+  Parameters: {"_pjax"=>"[data-pjax-container]", "model_name"=>"abanda"}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering /Users/Thiago/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/rails_admin-1.1.1/app/views/rails_admin/main/index.html.haml within layouts/rails_admin/pjax
+  [1m[36mAbanda Load (0.4ms)[0m  [1m[34mSELECT  "abandas".* FROM "abandas" ORDER BY abandas.id desc LIMIT ? OFFSET ?[0m  [["LIMIT", 20], ["OFFSET", 0]]
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT COUNT(*) FROM "abandas"[0m
+  Rendered /Users/Thiago/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/rails_admin-1.1.1/app/views/rails_admin/main/index.html.haml within layouts/rails_admin/pjax (90.6ms)
+Completed 200 OK in 181ms (Views: 131.8ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/backend/agenda?_pjax=%5Bdata-pjax-container%5D" for 127.0.0.1 at 2017-05-22 14:17:21 -0300
+Processing by RailsAdmin::MainController#index as HTML
+  Parameters: {"_pjax"=>"[data-pjax-container]", "model_name"=>"agenda"}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering /Users/Thiago/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/rails_admin-1.1.1/app/views/rails_admin/main/index.html.haml within layouts/rails_admin/pjax
+  [1m[36mAgenda Load (0.5ms)[0m  [1m[34mSELECT  "agendas".* FROM "agendas" ORDER BY agendas.id desc LIMIT ? OFFSET ?[0m  [["LIMIT", 20], ["OFFSET", 0]]
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT COUNT(*) FROM "agendas"[0m
+  Rendered /Users/Thiago/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/rails_admin-1.1.1/app/views/rails_admin/main/index.html.haml within layouts/rails_admin/pjax (48.9ms)
+Completed 200 OK in 140ms (Views: 79.8ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/backend/banner?_pjax=%5Bdata-pjax-container%5D" for 127.0.0.1 at 2017-05-22 14:17:23 -0300
+Processing by RailsAdmin::MainController#index as HTML
+  Parameters: {"_pjax"=>"[data-pjax-container]", "model_name"=>"banner"}
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering /Users/Thiago/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/rails_admin-1.1.1/app/views/rails_admin/main/index.html.haml within layouts/rails_admin/pjax
+  [1m[36mBanner Load (0.4ms)[0m  [1m[34mSELECT  "banners".* FROM "banners" ORDER BY banners.id desc LIMIT ? OFFSET ?[0m  [["LIMIT", 20], ["OFFSET", 0]]
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT COUNT(*) FROM "banners"[0m
+  Rendered /Users/Thiago/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/rails_admin-1.1.1/app/views/rails_admin/main/index.html.haml within layouts/rails_admin/pjax (59.8ms)
+Completed 200 OK in 140ms (Views: 91.8ms | ActiveRecord: 1.2ms)
+
+
+Started GET "/backend/discografia?_pjax=%5Bdata-pjax-container%5D" for 127.0.0.1 at 2017-05-22 14:17:24 -0300
+Processing by RailsAdmin::MainController#index as HTML
+  Parameters: {"_pjax"=>"[data-pjax-container]", "model_name"=>"discografia"}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering /Users/Thiago/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/rails_admin-1.1.1/app/views/rails_admin/main/index.html.haml within layouts/rails_admin/pjax
+  [1m[36mDiscografia Load (0.4ms)[0m  [1m[34mSELECT  "discografias".* FROM "discografias" ORDER BY discografias.id desc LIMIT ? OFFSET ?[0m  [["LIMIT", 20], ["OFFSET", 0]]
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT COUNT(*) FROM "discografias"[0m
+  Rendered /Users/Thiago/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/rails_admin-1.1.1/app/views/rails_admin/main/index.html.haml within layouts/rails_admin/pjax (52.3ms)
+Completed 200 OK in 143ms (Views: 85.7ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/backend/mp3?_pjax=%5Bdata-pjax-container%5D" for 127.0.0.1 at 2017-05-22 14:17:25 -0300
+Processing by RailsAdmin::MainController#index as HTML
+  Parameters: {"_pjax"=>"[data-pjax-container]", "model_name"=>"mp3"}
+  [1m[36mUser Load (1.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering /Users/Thiago/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/rails_admin-1.1.1/app/views/rails_admin/main/index.html.haml within layouts/rails_admin/pjax
+  [1m[36mMp3 Load (0.3ms)[0m  [1m[34mSELECT  "mp3s".* FROM "mp3s" ORDER BY mp3s.id desc LIMIT ? OFFSET ?[0m  [["LIMIT", 20], ["OFFSET", 0]]
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT COUNT(*) FROM "mp3s"[0m
+  Rendered /Users/Thiago/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/rails_admin-1.1.1/app/views/rails_admin/main/index.html.haml within layouts/rails_admin/pjax (124.3ms)
+Completed 200 OK in 234ms (Views: 156.0ms | ActiveRecord: 1.8ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-05-22 14:17:40 -0300
+Processing by PagesController#home as HTML
+  [1m[36mAbanda Load (0.3ms)[0m  [1m[34mSELECT  "abandas".* FROM "abandas" WHERE "abandas"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/_banner.html.erb (26.6ms) [cache miss]
+  Rendered pages/_abanda.html.erb (1.4ms) [cache miss]
+  Rendered pages/_agenda.html.erb (0.8ms) [cache miss]
+  Rendered pages/_discografia.html.erb (1.0ms) [cache miss]
+  Rendered pages/_fotos.html.erb (0.7ms) [cache miss]
+  Rendered pages/_videos.html.erb (0.6ms) [cache miss]
+  Rendered pages/_parceiros.html.erb (0.4ms) [cache miss]
+  Rendered pages/_contato.html.erb (0.5ms) [cache miss]
+  Rendered pages/home.html.erb within layouts/application (112.4ms)
+  [1m[36mBanner Load (0.3ms)[0m  [1m[34mSELECT  "banners".* FROM "banners" ORDER BY "banners"."id" ASC LIMIT ?[0m  [["LIMIT", 1]]
+Completed 200 OK in 299ms (Views: 285.8ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/images/agenda.jpg" for 127.0.0.1 at 2017-05-22 14:17:41 -0300
+  
+ActionController::RoutingError (No route matches [GET] "/images/agenda.jpg"):
+  
+actionpack (5.1.1) lib/action_dispatch/middleware/debug_exceptions.rb:63:in `call'
+web-console (3.5.1) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.5.1) lib/web_console/middleware.rb:28:in `block in call'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `catch'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `call'
+actionpack (5.1.1) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.1.1) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.1.1) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.1.1) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.1.1) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.1.1) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.1.1) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.0) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.1.1) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.1.1) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+rack (2.0.3) lib/rack/method_override.rb:22:in `call'
+rack (2.0.3) lib/rack/runtime.rb:22:in `call'
+activesupport (5.1.1) lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+actionpack (5.1.1) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.1) lib/action_dispatch/middleware/static.rb:125:in `call'
+rack (2.0.3) lib/rack/sendfile.rb:111:in `call'
+railties (5.1.1) lib/rails/engine.rb:522:in `call'
+puma (3.8.2) lib/puma/configuration.rb:224:in `call'
+puma (3.8.2) lib/puma/server.rb:600:in `handle_request'
+puma (3.8.2) lib/puma/server.rb:435:in `process_client'
+puma (3.8.2) lib/puma/server.rb:299:in `block in run'
+puma (3.8.2) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+Started GET "/backend/mp3" for 127.0.0.1 at 2017-05-22 14:17:44 -0300
+Processing by RailsAdmin::MainController#index as HTML
+  Parameters: {"model_name"=>"mp3"}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering /Users/Thiago/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/rails_admin-1.1.1/app/views/rails_admin/main/index.html.haml within layouts/rails_admin/application
+  [1m[36mMp3 Load (0.3ms)[0m  [1m[34mSELECT  "mp3s".* FROM "mp3s" ORDER BY mp3s.id desc LIMIT ? OFFSET ?[0m  [["LIMIT", 20], ["OFFSET", 0]]
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT COUNT(*) FROM "mp3s"[0m
+  Rendered /Users/Thiago/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/rails_admin-1.1.1/app/views/rails_admin/main/index.html.haml within layouts/rails_admin/application (46.2ms)
+  Rendered /Users/Thiago/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/rails_admin-1.1.1/app/views/layouts/rails_admin/_secondary_navigation.html.haml (24.2ms) [cache miss]
+  Rendered /Users/Thiago/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/rails_admin-1.1.1/app/views/layouts/rails_admin/_navigation.html.haml (40.7ms) [cache miss]
+  Rendered /Users/Thiago/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/rails_admin-1.1.1/app/views/layouts/rails_admin/_sidebar_navigation.html.haml (26.6ms) [cache miss]
+  Rendering /Users/Thiago/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/rails_admin-1.1.1/app/views/layouts/rails_admin/pjax.html.haml
+  Rendered /Users/Thiago/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/rails_admin-1.1.1/app/views/layouts/rails_admin/pjax.html.haml (29.8ms)
+Completed 200 OK in 572ms (Views: 548.8ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/backend/banner?_pjax=%5Bdata-pjax-container%5D" for 127.0.0.1 at 2017-05-22 14:17:47 -0300
+Processing by RailsAdmin::MainController#index as HTML
+  Parameters: {"_pjax"=>"[data-pjax-container]", "model_name"=>"banner"}
+  [1m[36mUser Load (1.8ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering /Users/Thiago/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/rails_admin-1.1.1/app/views/rails_admin/main/index.html.haml within layouts/rails_admin/pjax
+  [1m[36mBanner Load (0.3ms)[0m  [1m[34mSELECT  "banners".* FROM "banners" ORDER BY banners.id desc LIMIT ? OFFSET ?[0m  [["LIMIT", 20], ["OFFSET", 0]]
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT COUNT(*) FROM "banners"[0m
+  Rendered /Users/Thiago/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/rails_admin-1.1.1/app/views/rails_admin/main/index.html.haml within layouts/rails_admin/pjax (64.9ms)
+Completed 200 OK in 197ms (Views: 134.4ms | ActiveRecord: 2.5ms)
+
+
+DEPRECATION WARNING: ActionView::Template::Handlers::Erubis is deprecated and will be removed from Rails 5.2. Switch to ActionView::Template::Handlers::ERB::Erubi instead. (called from <top (required)> at /Users/Thiago/Sites/CanoSerrado/config/environment.rb:5)
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.1ms)[0m  [1m[34m            SELECT sql
+            FROM sqlite_master
+            WHERE name='index_mp3s_on_discografia_id' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_mp3s_on_discografia_id' AND type='index'
+[0m
+  [1m[35m (0.2ms)[0m  [1m[34m            SELECT sql
+            FROM sqlite_master
+            WHERE name='index_users_on_reset_password_token' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_users_on_reset_password_token' AND type='index'
+[0m
+  [1m[35m (0.1ms)[0m  [1m[34m            SELECT sql
+            FROM sqlite_master
+            WHERE name='index_users_on_email' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_users_on_email' AND type='index'
+[0m
+DEPRECATION WARNING: ActionView::Template::Handlers::Erubis is deprecated and will be removed from Rails 5.2. Switch to ActionView::Template::Handlers::ERB::Erubi instead. (called from <top (required)> at /Users/Thiago/Sites/CanoSerrado/config/environment.rb:5)

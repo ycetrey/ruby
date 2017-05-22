@@ -17,11 +17,12 @@ RailsAdmin.config do |config|
   config.current_user_method(&:current_user)
 
   ## == DATEFORMAT == 
-  # config.model Agenda do
-  #   field :event_date, :datet do
-  #     date_format :default
-  #   end
-  # end
+
+  config.models do
+    fields_of_type :date do
+      strftime_format "%Y-%m-%d"
+    end
+  end
 
   ## == Wysiwyg == 
   # config.model Abanda do

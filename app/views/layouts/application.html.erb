@@ -11,7 +11,7 @@
     <link href='https://fonts.googleapis.com/css?family=Source+Code+Pro:400,300' rel='stylesheet' type='text/css'>
   </head>
 
-  <% if @banner.first.file != nil %>
+  <% if @banner != nil %>
   <body style="background: url(<%= @banner.first.file %>) #080808 fixed center top no-repeat;">
   <% else %>
   <body style="background: #080808 fixed center top no-repeat;">

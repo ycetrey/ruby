@@ -9,7 +9,9 @@ RailsAdmin.config do |config|
   config.navigation_static_label = "Links uteis"
 
   ### Popular gems integration
-
+  configure :event_date, :date do
+    date_format :default
+  end
   ## == Devise ==
   config.authenticate_with do
     warden.authenticate! scope: :user

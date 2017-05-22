@@ -11799,3 +11799,4 @@ Completed 200 OK in 615ms (Views: 371.7ms | ActiveRecord: 22.8ms)
 
 
 DEPRECATION WARNING: ActionView::Template::Handlers::Erubis is deprecated and will be removed from Rails 5.2. Switch to ActionView::Template::Handlers::ERB::Erubi instead. (called from <top (required)> at /Users/Thiago/Sites/CanoSerrado/config/environment.rb:5)
+DEPRECATION WARNING: ActionView::Template::Handlers::Erubis is deprecated and will be removed from Rails 5.2. Switch to ActionView::Template::Handlers::ERB::Erubi instead. (called from <top (required)> at /Users/Thiago/Sites/CanoSerrado/config/environment.rb:5)

@@ -1,9 +1,10 @@
 Rails.application.configure do
+
   # Settings specified here will take precedence over those in config/application.rb.
 
-  config.i18n.enforce_available_locales = false
-  config.i18n.available_locales = ["pt-BR"]
-  config.i18n.default_locale = :'pt-BR'
+  # config.i18n.enforce_available_locales = false
+  # config.i18n.available_locales = ["pt-BR"]
+  # config.i18n.default_locale = :'pt-BR'
   
   # In the development environment your application's code is reloaded on
   # every request. This slows down response time but is perfect for development

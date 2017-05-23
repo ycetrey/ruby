@@ -1,2 +1,24 @@
-<h1>Pages#fotos</h1>
-<p>Find me in app/views/pages/fotos.html.erb</p>
+<div id="content">
+    <div class="content fotos" id="fotos">
+      <h2>FOTOS</h2>
+      <ul class="galeria" id="galeria">
+        <% @photos.each do |photo| %>
+        <a href="#amplia" title="<%= photo.legend %>"><li>
+          <img src="<%= photo.file %>" alt="<%= photo.legend %>">
+          <div class="date"><p class="code"><%= photo.date.strftime("%d.%m.%Y") %></p></div>
+          <div class="name">
+            <h6 class="code"><%= photo.event_name %></h6>
+            <p class="code"><%= photo.address %></p>
+          </div>
+        </li></a>
+        <% end %>
+      </ul>
+      <!--
+      <ul class="paginacao" id="paginacao">
+        <li><a href="#1" title="1">1</a></li>
+        <li><a href="#2" title="2">2</a></li>
+        <li><a href="#3" title="3">3</a></li>
+      </ul>
+      -->
+    </div>
+  </div>

@@ -18,11 +18,22 @@ RailsAdmin.config do |config|
 
   ## == DATEFORMAT == 
 
-  config.models do
-    fields_of_type :date do
-      strftime_format "%Y-%m-%d"
-    end
-  end
+  # config.models do
+  #   fields_of_type :date do
+  #     strftime_format "%Y-%m-%d"
+  #   end
+  #   configure :event_date do
+  #     hide
+  #   end
+  # end
+
+  # config.model 'Agenda' do
+  #   list do 
+  #     field :event_date do
+  #       strftime_format "%Y-%m-%d"
+  #     end
+  #   end
+  # end
 
   ## == Wysiwyg == 
   # config.model Abanda do

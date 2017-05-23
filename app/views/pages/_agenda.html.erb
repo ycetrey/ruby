@@ -3,46 +3,16 @@
     <div class="content agenda" id="agenda">
       <h2>AGENDA</h2>
       <ul>
+        <% @agendas.each do |agenda| %>
         <a href="#amplia" title="Toxic Metal Fest"><li>
-          <div class="date"><p class="code">09.07</p></div>
+          <div class="date"><p class="code"><%= agenda.event_date.strftime("%d.%m") %></p></div>
           <div class="name">
-            <h6 class="code">Toxic Metal Fest - com Ratos de Porão e Zombie Crew 1</h6>
-            <p class="code">Adega Nóstra-vamos</p>
+            <h6 class="code"><%= agenda.title %></h6>
+            <p class="code"><%= agenda.address %></p>
           </div>
-          <div class="city"><p class="code">Cascavel - PR</p></div>
+          <div class="city"><p class="code"><%= agenda.city %></p></div>
         </li></a>
-        <a href="#amplia" title="Toxic Metal Fest"><li>
-          <div class="date"><p class="code">09.07</p></div>
-          <div class="name">
-            <h6 class="code">Toxic Metal Fest - com Ratos de Porão e Zombie Crew 2</h6>
-            <p class="code">Adega Nóstra-vamos</p>
-          </div>
-          <div class="city"><p class="code">Cascavel - PR</p></div>
-        </li></a>
-        <a href="#amplia" title="Toxic Metal Fest"><li>
-          <div class="date"><p class="code">09.07</p></div>
-          <div class="name">
-            <h6 class="code">Toxic Metal Fest - com Ratos de Porão e Zombie Crew 3</h6>
-            <p class="code">Adega Nóstra-vamos</p>
-          </div>
-          <div class="city"><p class="code">Cascavel - PR</p></div>
-        </li></a>
-        <a href="#amplia" title="Toxic Metal Fest"><li>
-          <div class="date"><p class="code">09.07</p></div>
-          <div class="name">
-            <h6 class="code">Toxic Metal Fest - com Ratos de Porão e Zombie Crew 4</h6>
-            <p class="code">Adega Nóstra-vamos</p>
-          </div>
-          <div class="city"><p class="code">Cascavel - PR</p></div>
-        </li></a>
-        <a href="#amplia" title="Toxic Metal Fest"><li>
-          <div class="date"><p class="code">09.07</p></div>
-          <div class="name">
-            <h6 class="code">Toxic Metal Fest - com Ratos de Porão e Zombie Crew 5</h6>
-            <p class="code">Adega Nóstra-vamos</p>
-          </div>
-          <div class="city"><p class="code">Cascavel - PR</p></div>
-        </li></a>
+        <% end %>
       </ul>
     </div>
   </div>

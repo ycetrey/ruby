@@ -1,9 +1,9 @@
 <h2>Log in</h2>
-
+<center>
 <%= form_for(resource, as: resource_name, url: session_path(resource_name)) do |f| %>
   <div class="field">
     <%= f.label :email %><br />
-    <%= f.email_field :email, autofocus: true %>
+    <%= f.email_field :email, autofocus: true, :size => "30" %>
   </div>
 
   <div class="field">
@@ -22,5 +22,4 @@
     <%= f.submit "Log in" %>
   </div>
 <% end %>
-
-<%= render "devise/shared/links" %>
+</center>

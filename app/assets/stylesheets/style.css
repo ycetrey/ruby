@@ -3337,11 +3337,11 @@ header.min {
   background: #080808;
 }
 #content.caveirafraca {
-  background: #080808 0 0 url(../images/agenda.jpg) no-repeat;
+  background: #080808 0 0 url(/assets/images/agenda.jpg) no-repeat;
   background-size: 100%;
 }
 #content.caveiraforte {
-  background: #080808 0 0 url(../images/videos.jpg) no-repeat;
+  background: #080808 0 0 url(/assets/images/videos.jpg) no-repeat;
 }
 #content > .content {
   max-width: 960px;

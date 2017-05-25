@@ -4,7 +4,8 @@ class PagesController < ApplicationController
     @abanda = Abanda.find(1)
     @agendas = Agenda.where('event_date >= ?', Date.today)
     @photos = Photo.all.limit('15').order("RANDOM()")
-    @discografia = Discografia.includes(:mp3s).limit(1)
+    @discografia = Discografia.first
+    @mp3s = Mp3.includes(:discografia).where(:discografia_id => @discografia.id)
     #@discografia = Discografia.first
   end
   

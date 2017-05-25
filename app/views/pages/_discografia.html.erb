@@ -6,13 +6,15 @@
       </div>
       <div class="half">
         <ul class="discografia code">
-          <li>Eterna Colonia - CD DEMO - 2016</li>
-
-          <li>1. Devastação Mental <span class="code">Ouvir / letra</span></li>
-          <li>1. Devastação Mental <span class="code">Ouvir / letra</span></li>
-          <li>1. Devastação Mental <span class="code">Ouvir / letra</span></li>
-          <li>1. Devastação Mental <span class="code">Ouvir / letra</span></li>
-
+          <li><%= @discografia.title %></li>
+          <% @mp3s.each_with_index do |mp3, index| %>
+          <li>
+            <%= index %>. <%= mp3.title %>
+            <span class="code">
+              <a href="<%= mp3.youtube_url %>" target="_blank">Ouvir / leta</a>
+            </span>
+          </li>
+          <% end %>
           <li>
             <ul class="botao">
               <li><a href="https://www.youtube.com/channel/UC2yDVP-oKAs3luNL2-BhN0A/videos" title="Youtube">BAIXAR CD</a></li>

@@ -17,13 +17,15 @@
           <% end %>
           <li>
             <ul class="botao">
-              <li><a href="https://www.youtube.com/channel/UC2yDVP-oKAs3luNL2-BhN0A/videos" title="Youtube">BAIXAR CD</a></li>
+              <li><a href="http://www.canoserrado.com.br/cano-serrado-ep-realidade-caotica-2017.zip" title="Youtube">BAIXAR CD</a></li>
             </ul>
           </li>
         </ul>
       </div>
       <div class="clearfix"></div>
+      <% if !@patrocinio.nil? %>
       <p style="height:30px">&nbsp;</p><br>
-      <img src="http://placehold.it/960x200" alt="" title="" width="100%">
+      <img src="<%= @patrocinio.file %>" alt="" title="" width="100%">
+      <% end %>
     </div>
   </div>

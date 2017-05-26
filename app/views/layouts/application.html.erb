@@ -1,7 +1,33 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Canoserrado</title>
+    <title>Cano Serrado</title>
+
+    <meta name="description" content="<%= @config.site_description %>"/>
+    <meta name="author" content="<%= @config.author %>"/>
+    <meta name="copyright" content="<%= @config.copyright %>"/>
+    <meta name="rating" content="general"/>
+    <meta name="viewport" content="width=device-width, user-scalable=no">
+    <meta http-equiv="content-language" content="pt-br" />
+    <meta name="generator" content="Ruby on Rails"/>
+    <meta name="robots" content="all"/>
+
+    <meta property="og:title" content="Cano Serrado"/>
+    <meta property="og:description" content="<%= @config.site_description %>"/>
+    <meta property="og:image" content="<%= @config.link_imagem %>"/>
+    <meta property="og:url" content="<?php echo $url ?>"/>
+
+    <meta name="twitter:title" content="Cano Serrado">
+    <meta name="twitter:description" content="<%= @config.site_description %>">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:site" content="@<%= @config.twitter %>">
+    <meta name="twitter:creator" content="<%= @config.twitter %>">
+    <meta name="twitter:image" content="<%= @config.link_imagem %>">
+
+    <meta itemprop="name" content="Cano Serrado">
+    <meta itemprop="description" content="<%= @config.site_description %>">
+    <meta itemprop="image" content="<%= @config.link_imagem %>">
+
     <%= csrf_meta_tags %>
 
     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
@@ -16,6 +42,13 @@
   <% else %>
   <body style="background: #080808 fixed center top no-repeat;">
   <% end %>
+    <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+    <script>
+        (adsbygoogle = window.adsbygoogle || []).push({
+            google_ad_client: "ca-pub-4982907570491971",
+            enable_page_level_ads: true
+        });
+    </script>
     <%= yield %>
 
     <script>

@@ -1,2 +1,8 @@
-<h1>Pages#parceiros</h1>
-<p>Find me in app/views/pages/parceiros.html.erb</p>
+<div id="content">
+  <div class="content row" id="parceiros">
+    <h2>PARCEIROS</h2>
+      <% @parceiros.each do |parceiro| %>
+      <div class="col-xs-4 padding"><img class="box" src="./assets/images/exemplos.jpg" alt="Title" title="title" width="100%"></div>
+      <% end %>
+  </div>
+</div>

@@ -6,7 +6,10 @@ class PagesController < ApplicationController
     @photos = Photo.all.limit('15').order("RANDOM()")
     @discografia = Discografia.first
     @mp3s = Mp3.includes(:discografia).where(:discografia_id => @discografia.id)
-    #@discografia = Discografia.first
+    @patrocinio = Patrocinio.all.order("RANDOM()").first
+    @parceiros = Parceiro.all
+
+    @config = Config.first
   end
   
 end

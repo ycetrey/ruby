@@ -1,2 +1,41 @@
-<h1>Pages#contato</h1>
-<p>Find me in app/views/pages/contato.html.erb</p>
+   <div id="content"  class="caveirafraca">
+        <form action="/" method="POST" class="content row center-xs" id="contato">
+            <h2>CONTATO</h2>
+            <p class="code col-xs-12">Contato para shows: <a href="mailto:shows@canoserrado.com.br" target="_blank" class="code">shows@canoserrado.com.br</a></p>
+            <div class="clearfix"></div>
+            <p style="height:30px">&nbsp;</p><br>
+            <input class="col-xs-12" type="text" name="Contato[nome]" placeholder="NOME">
+            <input class="col-xs-12" type="text" name="Contato[email]" placeholder="E-MAIL">
+            <textarea class="col-xs-12" rows="6" type="text" name="Contato[mensagem]" placeholder="MENSAGEM"></textarea>
+            <input class="col-xs-12" type="submit" value="ENVIAR">
+        </form>
+
+        <footer>
+            <div class="content">
+                <menu>
+                    <% if !@config.twitter.nil? && @config.twitter != "" %>
+                    <li><a href="<%= @config.twitter %>"><i class="fa fa-twitter"></i></a></li>
+                    <% end %>
+                    <% if !@config.facebook.nil? && @config.facebook != "" %>
+                    <li><a href="<%= @config.facebook %>"><i class="fa fa-facebook"></i></a></li>
+                    <% end %>
+                    <% if !@config.youtube.nil? && @config.youtube != "" %>
+                    <li><a href="<%= @config.youtube %>"><i class="fa fa-youtube-play"></i></a></li>
+                    <% end %>
+                    <% if !@config.instagram.nil? && @config.instagram != "" %>
+                    <li><a href="<%= @config.instagram %>"><i class="fa fa-instagram"></i></a></li>
+                    <% end %>
+                    <% if !@config.sound_cloud.nil? && @config.sound_cloud != "" %>
+                    <li><a href="<%= @config.sound_cloud %>"><i class="fa fa-soundcloud  "></i></a></li>
+                    <% end %>
+                </menu>
+                <p style="height:200px">&nbsp;</p><br>
+                <div style="background-color: #555; height:1px"></div>
+                <div class="row" style="max-width:960px; margin: 0 auto;">
+                    <p class="code" style="line-height: 80px; color: #555; width: 100%"><%= @config.copyright %> <span class="copyright"><%= @config.author %></span></p>
+                    <div class="clearfix"></div>
+                </div>
+            </div>
+        </footer>
+        <div class="clearfix"></div>
+    </div>

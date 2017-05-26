@@ -2,7 +2,8 @@
 <html>
   <head>
     <title>Cano Serrado</title>
-
+    
+    <% if !@config.nil? %>
     <meta name="description" content="<%= @config.site_description %>"/>
     <meta name="author" content="<%= @config.author %>"/>
     <meta name="copyright" content="<%= @config.copyright %>"/>
@@ -27,6 +28,7 @@
     <meta itemprop="name" content="Cano Serrado">
     <meta itemprop="description" content="<%= @config.site_description %>">
     <meta itemprop="image" content="<%= @config.link_imagem %>">
+    <% end %>
 
     <%= csrf_meta_tags %>
 
